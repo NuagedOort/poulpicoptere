@@ -882,15 +882,15 @@ sstream
 tiny_obj_loader.h
 ../extlib/tinyobjloader/tiny_obj_loader.h
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
 glm/glm.hpp
 -
 glm/gtc/quaternion.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Renderable.hpp
 vector
 -
 memory
@@ -898,13 +898,13 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Plane.hpp
 glm/glm.hpp
 -
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -914,11 +914,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/ShaderProgram.hpp
 string
 -
 memory
@@ -926,17 +926,17 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Sphere.hpp
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Utils.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
 Sphere.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Sphere.hpp
 Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Plane.hpp
 array
 -
 vector
@@ -946,25 +946,25 @@ utility
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
 vector
 -
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceFieldRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceFieldRenderable.hpp
 ../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
 ConstantForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
 iostream
 -
 memory
@@ -972,15 +972,15 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ParticleListRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ParticleListRenderable.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
 ../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
 ../Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Utils.hpp
 ../gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 vector
 -
 glm/glm.hpp
@@ -988,31 +988,31 @@ glm/glm.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
 memory
 -
 vector
 -
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceFieldRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceFieldRenderable.hpp
 ../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
 SpringForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../Renderable.hpp
 vector
 -
 memory
@@ -1020,7 +1020,7 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -1030,11 +1030,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../ShaderProgram.hpp
 string
 -
 memory
@@ -1042,7 +1042,7 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -1050,21 +1050,21 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/ShaderProgram.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
 GL/glew.h
 -
 glm/glm.hpp
@@ -1074,133 +1074,89 @@ string
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/LightedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/LightedCubeRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/LightedCylinderRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/LightedCylinderRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/CubeRenderable.hpp
-Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/CylinderRenderable.hpp
-Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
-chrono
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/FrameRenderable.hpp
-Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
-glm/glm.hpp
--
-glm/gtc/quaternion.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalCylinderRenderable.hpp
-HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalMeshRenderable.hpp
-HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
-string
--
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
-Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
-vector
--
-memory
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalSphereRenderable.hpp
-HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/IndexedCubeRenderable.hpp
-Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
-vector
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
-vector
--
-glm/glm.hpp
--
-string
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/BezierKeyframeCollection.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
 map
 -
 array
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/MeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/CubeRenderable.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/CylinderRenderable.hpp
+Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
+chrono
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FrameRenderable.hpp
+Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
+glm/glm.hpp
+-
+glm/gtc/quaternion.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalCylinderRenderable.hpp
+HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalMeshRenderable.hpp
+HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
 string
 -
 vector
@@ -1208,13 +1164,65 @@ vector
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+vector
+-
+memory
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalSphereRenderable.hpp
+HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/IndexedCubeRenderable.hpp
+Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
+vector
+-
+glm/glm.hpp
+-
+string
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
+GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
+map
+-
+array
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/MeshRenderable.hpp
+Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+string
+-
+vector
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Plane.hpp
 glm/glm.hpp
 -
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -1224,11 +1232,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
 string
 -
 memory
@@ -1236,17 +1244,17 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Sphere.hpp
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
 Sphere.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Sphere.hpp
 Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Plane.hpp
 array
 -
 vector
@@ -1256,15 +1264,15 @@ utility
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
 Camera.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
 lighting/Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/lighting/Light.hpp
 FPSCounter.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
 unordered_set
 -
 memory
@@ -1286,9 +1294,9 @@ glm/gtc/matrix_transform.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/lighting/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -1296,7 +1304,7 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/lighting/Light.hpp
 vector
 -
 GL/glew.h
@@ -1304,17 +1312,23 @@ GL/glew.h
 glm/glm.hpp
 -
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/lighting/./../../include/ShaderProgram.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Camera.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/BezierKeyframeCollection.cpp
+./../include/BezierKeyframeCollection.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/BezierKeyframeCollection.hpp
+glm/gtx/compatibility.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Camera.cpp
 ./../include/Camera.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
 iostream
 -
 glm/gtc/type_precision.hpp
@@ -1324,29 +1338,29 @@ glm/gtc/matrix_transform.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/CubeRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/CubeRenderable.cpp
 ./../include/CubeRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/CubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/CubeRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/CylinderRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/CylinderRenderable.cpp
 ./../include/CylinderRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/CylinderRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/CylinderRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 glm/gtc/matrix_transform.hpp
@@ -1354,35 +1368,35 @@ glm/gtc/matrix_transform.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/FPSCounter.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/FPSCounter.cpp
 ./../include/FPSCounter.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
 chrono
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/FrameRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/FrameRenderable.cpp
 ./../include/FrameRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/FrameRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FrameRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/GeometricTransformation.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/GeometricTransformation.cpp
 ../include/GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/HierarchicalCylinderRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/HierarchicalCylinderRenderable.cpp
 ./../include/HierarchicalCylinderRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalCylinderRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalCylinderRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 glm/gtc/matrix_transform.hpp
@@ -1390,109 +1404,109 @@ glm/gtc/matrix_transform.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/HierarchicalMeshRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/HierarchicalMeshRenderable.cpp
 ./../include/HierarchicalMeshRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalMeshRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Io.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/HierarchicalRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/HierarchicalRenderable.cpp
 ./../include/HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/Viewer.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/HierarchicalSphereRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/HierarchicalSphereRenderable.cpp
 ./../include/HierarchicalSphereRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalSphereRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalSphereRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/IndexedCubeRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/IndexedCubeRenderable.cpp
 ./../include/IndexedCubeRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/IndexedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/IndexedCubeRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Io.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Io.cpp
 ./../include/Io.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
 iostream
 -
 tiny_obj_loader.h
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/tiny_obj_loader.h
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/tiny_obj_loader.h
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/KeyframeCollection.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/KeyframeCollection.cpp
 ./../include/KeyframeCollection.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
 glm/gtx/compatibility.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/MeshRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/MeshRenderable.cpp
 ./../include/MeshRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/MeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/MeshRenderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/Io.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Io.hpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Plane.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Plane.cpp
 ./../include/Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Plane.hpp
 glm/gtc/matrix_access.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Renderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Renderable.cpp
 ./../include/Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/Viewer.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/ShaderProgram.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/ShaderProgram.cpp
 algorithm
 -
 fstream
@@ -1510,21 +1524,21 @@ vector
 GL/glew.h
 -
 ./../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Sphere.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Sphere.cpp
 ./../include/Sphere.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Sphere.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Utils.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Utils.cpp
 ./../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Utils.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 chrono
 -
 random
@@ -1534,13 +1548,13 @@ glm/gtx/color_space.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/Viewer.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Viewer.cpp
 ./../include/Viewer.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -1552,31 +1566,31 @@ sstream
 iomanip
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Camera.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Camera.hpp
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
 chrono
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
 glm/glm.hpp
 -
 glm/gtc/quaternion.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalCylinderRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalCylinderRenderable.hpp
 HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
 vector
 -
 memory
@@ -1584,13 +1598,13 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
 glm/glm.hpp
 -
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -1600,11 +1614,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -1612,17 +1626,17 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Sphere.hpp
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Utils.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
 Sphere.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Sphere.hpp
 Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
 array
 -
 vector
@@ -1632,15 +1646,15 @@ utility
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Viewer.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Viewer.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
 Camera.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Camera.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Camera.hpp
 lighting/Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/Light.hpp
 FPSCounter.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
 unordered_set
 -
 memory
@@ -1662,9 +1676,9 @@ glm/gtc/matrix_transform.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/HierarchicalRenderable.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Renderable.hpp
 vector
 -
 memory
@@ -1672,13 +1686,13 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Plane.hpp
 glm/glm.hpp
 -
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -1688,11 +1702,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -1700,19 +1714,19 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ConstantForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ConstantForceField.hpp
 vector
 -
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ForceField.hpp
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/Particle.hpp
 iostream
 -
 memory
@@ -1720,63 +1734,63 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ConstantForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ConstantForceField.hpp
 vector
 -
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ControlledForceFieldRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ControlledForceFieldRenderable.hpp
 ./../../include/HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/HierarchicalRenderable.hpp
 ./../../include/dynamics/ConstantForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ConstantForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/dynamics/ConstantForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DampingForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DampingForceField.hpp
 vector
 -
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystem.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystem.hpp
 vector
 -
 Collision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 Solver.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Solver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Solver.hpp
 ../Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystemRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystemRenderable.hpp
 vector
 -
 DynamicSystem.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystem.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystem.hpp
 ../HierarchicalCylinderRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalCylinderRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalCylinderRenderable.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/EulerExplicitSolver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/EulerExplicitSolver.hpp
 Solver.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Solver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Solver.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 iostream
 -
 memory
@@ -1784,57 +1798,57 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleParticleCollision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleParticleCollision.hpp
 Collision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticlePlaneCollision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticlePlaneCollision.hpp
 Collision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 ./../../include/Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/./../../include/Plane.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleRenderable.hpp
 ../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Solver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Solver.hpp
 memory
 -
 vector
 -
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringForceField.hpp
 ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ForceField.hpp
 Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringListRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringListRenderable.hpp
 ../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
 SpringForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringForceField.hpp
 list
 -
 vector
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -1842,7 +1856,7 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/Light.hpp
 vector
 -
 GL/glew.h
@@ -1850,41 +1864,41 @@ GL/glew.h
 glm/glm.hpp
 -
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/lighting/./../../include/ShaderProgram.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/Collision.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/Collision.cpp
 ./../../include/dynamics/Collision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Collision.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ConstantForceField.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ConstantForceField.cpp
 ./../../include/dynamics/ConstantForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ConstantForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ConstantForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ConstantForceFieldRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ConstantForceFieldRenderable.cpp
 ../../include/dynamics/ConstantForceFieldRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceFieldRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ConstantForceFieldRenderable.hpp
 ../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/log.hpp
 ../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ControlledForceFieldRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ControlledForceFieldRenderable.cpp
 ./../../include/dynamics/ControlledForceFieldRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ControlledForceFieldRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ControlledForceFieldRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/log.hpp
 glm/gtc/type_ptr.hpp
 -
 glm/gtc/matrix_transform.hpp
@@ -1892,11 +1906,11 @@ glm/gtc/matrix_transform.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/DampingForceField.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/DampingForceField.cpp
 ./../../include/dynamics/DampingForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DampingForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DampingForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/DynamicSystem.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/DynamicSystem.cpp
 cmath
 -
 iostream
@@ -1908,15 +1922,15 @@ glm/gtc/type_ptr.hpp
 glm/gtx/norm.hpp
 -
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
 ./../../include/dynamics/DynamicSystem.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystem.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystem.hpp
 ./../../include/dynamics/ParticlePlaneCollision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticlePlaneCollision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticlePlaneCollision.hpp
 ./../../include/dynamics/ParticleParticleCollision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleParticleCollision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleParticleCollision.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/DynamicSystemRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/DynamicSystemRenderable.cpp
 cmath
 -
 iostream
@@ -1930,49 +1944,49 @@ glm/gtc/type_ptr.hpp
 glm/gtc/random.hpp
 -
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
 ./../../include/dynamics/DynamicSystemRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystemRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/DynamicSystemRenderable.hpp
 ./../../include/Viewer.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Viewer.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Viewer.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/EulerExplicitSolver.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/EulerExplicitSolver.cpp
 ./../../include/dynamics/EulerExplicitSolver.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/EulerExplicitSolver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/EulerExplicitSolver.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ForceField.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ForceField.cpp
 ../../include/dynamics/ForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/Particle.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/Particle.cpp
 ./../../include/dynamics/Particle.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/Particle.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ParticleListRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ParticleListRenderable.cpp
 ../../include/dynamics/ParticleListRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/ParticleListRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/ParticleListRenderable.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ParticleParticleCollision.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ParticleParticleCollision.cpp
 ./../../include/dynamics/ParticleParticleCollision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleParticleCollision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleParticleCollision.hpp
 glm/gtx/norm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ParticlePlaneCollision.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ParticlePlaneCollision.cpp
 ./../../include/dynamics/ParticlePlaneCollision.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticlePlaneCollision.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticlePlaneCollision.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/ParticleRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/ParticleRenderable.cpp
 ./../../include/dynamics/ParticleRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/ParticleRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Utils.hpp
 glm/gtc/matrix_transform.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -1980,21 +1994,21 @@ glm/gtc/type_ptr.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/Solver.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/Solver.cpp
 ../../include/dynamics/Solver.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/SpringForceField.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/SpringForceField.cpp
 ./../../include/dynamics/SpringForceField.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringForceField.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringForceField.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/SpringForceFieldRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/SpringForceFieldRenderable.cpp
 ../../include/dynamics/SpringForceFieldRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceFieldRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/dynamics/SpringForceFieldRenderable.hpp
 ../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/log.hpp
 ../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 glm/glm.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -2002,33 +2016,33 @@ glm/gtc/type_ptr.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/SpringListRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/SpringListRenderable.cpp
 ./../../include/dynamics/SpringListRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringListRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/dynamics/SpringListRenderable.hpp
 ../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/log.hpp
 ../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/gl_helper.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/gl_helper.cpp
 ./../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/gl_helper.hpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/GeometricTransformation.hpp
 glm/glm.hpp
 -
 glm/gtc/quaternion.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Io.hpp
 vector
 -
 glm/glm.hpp
@@ -2036,23 +2050,23 @@ glm/glm.hpp
 string
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Plane.hpp
 glm/glm.hpp
 -
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Sphere.hpp
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/GeometricTransformation.hpp
 Sphere.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Sphere.hpp
 Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Plane.hpp
 array
 -
 vector
@@ -2062,9 +2076,9 @@ utility
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -2072,17 +2086,17 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
 Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../Renderable.hpp
 vector
 -
 memory
@@ -2090,7 +2104,7 @@ memory
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -2100,11 +2114,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../ShaderProgram.hpp
 string
 -
 memory
@@ -2112,7 +2126,7 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -2120,7 +2134,7 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Light.hpp
 vector
 -
 GL/glew.h
@@ -2128,15 +2142,15 @@ GL/glew.h
 glm/glm.hpp
 -
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/ShaderProgram.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Material.hpp
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/ShaderProgram.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/log.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/./../../include/gl_helper.hpp
 GL/glew.h
 -
 glm/glm.hpp
@@ -2146,17 +2160,17 @@ string
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/DirectionalLightRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/DirectionalLightRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
 Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
 vector
 -
 GL/glew.h
@@ -2164,15 +2178,15 @@ GL/glew.h
 glm/glm.hpp
 -
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/ShaderProgram.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/LightedMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/LightedMeshRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Material.hpp
 ./../lighting/Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../lighting/Light.hpp
 string
 -
 vector
@@ -2180,13 +2194,13 @@ vector
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Material.hpp
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/ShaderProgram.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/log.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../../include/gl_helper.hpp
 GL/glew.h
 -
 glm/glm.hpp
@@ -2196,41 +2210,41 @@ string
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/PointLightRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/PointLightRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
 Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/SpotLightRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/SpotLightRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/./../HierarchicalRenderable.hpp
 Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/DirectionalLightRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/DirectionalLightRenderable.cpp
 ./../../include/lighting/DirectionalLightRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/DirectionalLightRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/DirectionalLightRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
 glm/gtx/quaternion.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -2240,71 +2254,71 @@ glm/gtc/matrix_transform.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/Light.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/Light.cpp
 ./../../include/lighting/Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Light.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/LightedCubeRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/LightedCubeRenderable.cpp
 ../../include/lighting/LightedCubeRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/LightedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/LightedCubeRenderable.hpp
 ../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 ../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/LightedCylinderRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/LightedCylinderRenderable.cpp
 ../../include/lighting/LightedCylinderRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/lighting/LightedCylinderRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/lighting/LightedCylinderRenderable.hpp
 ../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/gl_helper.hpp
 ../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/LightedMeshRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/LightedMeshRenderable.cpp
 ./../../include/lighting/LightedMeshRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/LightedMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/LightedMeshRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
 ./../../include/Io.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Io.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/Material.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/Material.cpp
 ./../../include/lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/Material.hpp
 glm/gtc/type_ptr.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/PointLightRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/PointLightRenderable.cpp
 ./../../include/lighting/PointLightRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/PointLightRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/PointLightRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
 glm/gtx/quaternion.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -2314,15 +2328,15 @@ glm/gtc/matrix_transform.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/SpotLightRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/SpotLightRenderable.cpp
 ./../../include/lighting/SpotLightRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/SpotLightRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/lighting/SpotLightRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/lighting/./../../include/Utils.hpp
 glm/gtx/quaternion.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -2332,17 +2346,17 @@ glm/gtc/matrix_transform.hpp
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/log.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/log.cpp
 ./../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/log.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/GeometricTransformation.hpp
 glm/glm.hpp
 -
 glm/gtc/quaternion.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Io.hpp
 vector
 -
 glm/glm.hpp
@@ -2350,23 +2364,23 @@ glm/glm.hpp
 string
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Plane.hpp
 glm/glm.hpp
 -
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Sphere.hpp
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/GeometricTransformation.hpp
 Sphere.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Sphere.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Sphere.hpp
 Plane.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Plane.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Plane.hpp
 array
 -
 vector
@@ -2376,33 +2390,33 @@ utility
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
-Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
-vector
--
-memory
--
-glm/glm.hpp
--
-
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../KeyframeCollection.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../BezierKeyframeCollection.hpp
 GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../GeometricTransformation.hpp
 map
 -
 array
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
+vector
+-
+memory
+-
+glm/glm.hpp
+-
+
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
 glm/glm.hpp
 -
 unordered_set
@@ -2412,11 +2426,11 @@ memory
 vector
 -
 ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../ShaderProgram.hpp
 SFML/Graphics.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../ShaderProgram.hpp
 string
 -
 memory
@@ -2424,7 +2438,7 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
 string
 -
 memory
@@ -2432,13 +2446,13 @@ memory
 unordered_map
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/log.hpp
 iostream
 -
 ctime
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Light.hpp
 vector
 -
 GL/glew.h
@@ -2446,15 +2460,15 @@ GL/glew.h
 glm/glm.hpp
 -
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 ./../../include/ShaderProgram.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/log.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/gl_helper.hpp
 GL/glew.h
 -
 glm/glm.hpp
@@ -2464,53 +2478,53 @@ string
 memory
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/BillBoardPlaneRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/BillBoardPlaneRenderable.hpp
 ./../Renderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MipMapCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MipMapCubeRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MultiTexturedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MultiTexturedCubeRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedCubeRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedLightedMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedLightedMeshRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 ./../lighting/Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Light.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Light.hpp
 string
 -
 vector
@@ -2518,35 +2532,35 @@ vector
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedPlaneRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedPlaneRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedTriangleRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedTriangleRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 vector
 -
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/UltimateMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/UltimateMeshRenderable.hpp
 ./../HierarchicalRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
 ./../lighting/Material.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Material.hpp
 ./../lighting/Light.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Light.hpp
-./../KeyframeCollection.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../KeyframeCollection.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/Light.hpp
+./../BezierKeyframeCollection.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../BezierKeyframeCollection.hpp
 string
 -
 vector
@@ -2554,15 +2568,15 @@ vector
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/BillBoardPlaneRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/BillBoardPlaneRenderable.cpp
 ./../../include/texturing/BillBoardPlaneRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/BillBoardPlaneRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/BillBoardPlaneRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -2572,13 +2586,13 @@ SFML/Graphics/Image.hpp
 iostream
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/MipMapCubeRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/MipMapCubeRenderable.cpp
 ./../../include/texturing/MipMapCubeRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MipMapCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MipMapCubeRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -2588,13 +2602,13 @@ SFML/Graphics/Image.hpp
 iostream
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/MultiTexturedCubeRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/MultiTexturedCubeRenderable.cpp
 ./../../include/texturing/MultiTexturedCubeRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MultiTexturedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/MultiTexturedCubeRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -2604,13 +2618,13 @@ SFML/Graphics/Image.hpp
 iostream
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/TexturedCubeRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/TexturedCubeRenderable.cpp
 ./../../include/texturing/TexturedCubeRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedCubeRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedCubeRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -2620,31 +2634,31 @@ SFML/Graphics/Image.hpp
 iostream
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/TexturedLightedMeshRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/TexturedLightedMeshRenderable.cpp
 ./../../include/texturing/TexturedLightedMeshRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedLightedMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedLightedMeshRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
 ./../../include/Io.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Io.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/TexturedPlaneRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/TexturedPlaneRenderable.cpp
 ./../../include/texturing/TexturedPlaneRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedPlaneRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedPlaneRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -2654,15 +2668,15 @@ SFML/Graphics/Image.hpp
 iostream
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/TexturedTriangleRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/TexturedTriangleRenderable.cpp
 ./../../include/texturing/TexturedTriangleRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedTriangleRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/TexturedTriangleRenderable.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h
@@ -2672,19 +2686,19 @@ SFML/Graphics/Image.hpp
 iostream
 -
 
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/UltimateMeshRenderable.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/UltimateMeshRenderable.cpp
 ./../../include/texturing/UltimateMeshRenderable.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/UltimateMeshRenderable.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/UltimateMeshRenderable.hpp
 ./../../include/GeometricTransformation.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/GeometricTransformation.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/GeometricTransformation.hpp
 ./../../include/gl_helper.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/gl_helper.hpp
 ./../../include/log.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
 ./../../include/Io.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Io.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Io.hpp
 ./../../include/Utils.hpp
-/home/machiavel/Documents/Projet/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/Utils.hpp
 glm/gtc/type_ptr.hpp
 -
 GL/glew.h

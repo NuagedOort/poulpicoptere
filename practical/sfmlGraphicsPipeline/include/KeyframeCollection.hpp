@@ -44,13 +44,6 @@ public:
   glm::mat4 interpolateTransformation( float time ) const;
 
   /**
-  This function is used to parametrically interpolate a geometric transformation 
-  with a given polynom order 
-  */
-
-  glm::mat4 parametricInterpolationTransformation( float time, int order ) const;
-
-  /**
    * @brief Check if the collection is empty.
    * @return True if the collection is empty, false otherwise.
    */

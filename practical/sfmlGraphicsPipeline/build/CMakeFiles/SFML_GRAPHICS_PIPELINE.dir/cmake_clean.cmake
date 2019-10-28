@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/BezierKeyframeCollection.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CubeRenderable.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CylinderRenderable.cpp.o"

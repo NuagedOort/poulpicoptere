@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++0x -fopenmp
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/machiavel/Documents/Projet/practical/sampleProject/../sfmlGraphicsPipeline/include -I/home/machiavel/Documents/Projet/practical/sampleProject/../sfmlGraphicsPipeline/extlib/glm-0.9.7.1 -I/home/machiavel/Documents/Projet/practical/sampleProject/../sfmlGraphicsPipeline/extlib/glew-2.2.0/include -I/usr/include/SFML -I/home/machiavel/Documents/Projet/practical/sampleProject/../sfmlGraphicsPipeline/extlib/freetype-2.5.5/include -I/home/machiavel/Documents/Projet/practical/sampleProject/../sfmlGraphicsPipeline/extlib/tinyobjloader 
+CXX_INCLUDES = -I/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/../sfmlGraphicsPipeline/include -I/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/../sfmlGraphicsPipeline/extlib/glm-0.9.7.1 -I/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/../sfmlGraphicsPipeline/extlib/glew-2.2.0/include -I/usr/include/SFML -I/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/../sfmlGraphicsPipeline/extlib/freetype-2.5.5/include -I/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/../sfmlGraphicsPipeline/extlib/tinyobjloader 
 

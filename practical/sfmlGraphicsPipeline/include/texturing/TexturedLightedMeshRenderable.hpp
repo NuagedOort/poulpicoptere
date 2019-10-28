@@ -18,8 +18,6 @@ class TexturedLightedMeshRenderable : public HierarchicalRenderable
             const std::string& mesh_filename,
             const std::string& texture_filename );
         void setMaterial(const MaterialPtr& material);
-        void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
-        void addLocalTransformKeyframe( const GeometricTransformation& transformation, float time );
 
     private:
         void do_draw();

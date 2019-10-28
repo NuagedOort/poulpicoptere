@@ -1,4 +1,4 @@
-# Install script for directory: /home/machiavel/Documents/Projet/practical/sampleProject
+# Install script for directory: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/machiavel/Documents/Projet/practical/sampleProject/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

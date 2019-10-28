@@ -4,7 +4,7 @@
 #include "./../HierarchicalRenderable.hpp"
 #include "./../lighting/Material.hpp"
 #include "./../lighting/Light.hpp"
-#include "./../KeyframeCollection.hpp"
+#include "./../BezierKeyframeCollection.hpp"
 
 #include <string>
 #include <vector>
@@ -32,8 +32,8 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         std::vector< glm::vec2 > m_texCoords;
         std::vector< unsigned int > m_indices;
 
-        KeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
-        KeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
+        BezierKeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
+        BezierKeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
 
         unsigned int m_pBuffer;
         unsigned int m_cBuffer;

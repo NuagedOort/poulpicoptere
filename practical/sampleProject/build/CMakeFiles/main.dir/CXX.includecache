@@ -872,6 +872,14 @@ glm/glm.hpp
 ./../../include/ShaderProgram.hpp
 ../../sfmlGraphicsPipeline/include/lighting/./../../include/ShaderProgram.hpp
 
+../../sfmlGraphicsPipeline/include/texturing/./../BezierKeyframeCollection.hpp
+GeometricTransformation.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../GeometricTransformation.hpp
+map
+-
+array
+-
+
 ../../sfmlGraphicsPipeline/include/texturing/./../HierarchicalRenderable.hpp
 Renderable.hpp
 ../../sfmlGraphicsPipeline/include/texturing/./../Renderable.hpp
@@ -880,14 +888,6 @@ vector
 memory
 -
 glm/glm.hpp
--
-
-../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
-GeometricTransformation.hpp
-../../sfmlGraphicsPipeline/include/texturing/./../GeometricTransformation.hpp
-map
--
-array
 -
 
 ../../sfmlGraphicsPipeline/include/texturing/./../Renderable.hpp
@@ -1019,8 +1019,8 @@ glm/glm.hpp
 ../../sfmlGraphicsPipeline/include/texturing/./../lighting/Material.hpp
 ./../lighting/Light.hpp
 ../../sfmlGraphicsPipeline/include/texturing/./../lighting/Light.hpp
-./../KeyframeCollection.hpp
-../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
+./../BezierKeyframeCollection.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../BezierKeyframeCollection.hpp
 string
 -
 vector
@@ -1028,7 +1028,7 @@ vector
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Projet/practical/sampleProject/main.cpp
+/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/main.cpp
 Viewer.hpp
 -
 ShaderProgram.hpp
