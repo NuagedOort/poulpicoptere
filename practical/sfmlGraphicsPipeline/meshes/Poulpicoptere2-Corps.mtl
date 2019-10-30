@@ -1,0 +1,24 @@
+# Blender MTL File: 'Poulpicoptere2_OpenGL.blend'
+# Material Count: 2
+
+newmtl Material
+Ns 225.000000
+Ka 0.832727 0.832727 0.832727
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd ../textures/poulpi/MetalBare.jpg
+map_Ns ../textures/poulpi/MetalBare.jpg
+
+newmtl Material.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.017617 0.023643 0.044616
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2

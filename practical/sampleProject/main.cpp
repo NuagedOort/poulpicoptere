@@ -17,7 +17,7 @@
 
 #include <iostream>
 
-#define ANITIME 20.0f
+#define ANITIME 10.0f
 
 void bladesRotation(UltimateMeshRenderablePtr blades) {
     glm::vec3 translation = glm::vec3{0,0,0};
@@ -64,7 +64,7 @@ void initialize_scene( Viewer& viewer )
     texFlower = "./../../sfmlGraphicsPipeline/textures/billboardredflowers.png";
     texHalf = "./../../sfmlGraphicsPipeline/textures/halflife.png";
     texBun = "./../../sfmlGraphicsPipeline/textures/TexturedBunny.png";
-    texMetal = "./../../sfmlGraphicsPipeline/textures/MetalBare0019_M.jpg";
+    texMetal = "./../../sfmlGraphicsPipeline/textures/poulpi/MetalBare.jpg";
 
     PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(5.0, 5.0, 3.0),
             glm::vec3(0.0,0.0,0.0),
@@ -78,9 +78,9 @@ void initialize_scene( Viewer& viewer )
 
 
     UltimateMeshRenderablePtr poulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(texShader,
-            "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2_Corps.obj", texMetal);
+            "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj", texMetal);
     UltimateMeshRenderablePtr poulpicopterePales = std::make_shared<UltimateMeshRenderable>(texShader,
-            "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2_Pales.obj", texMetal);
+            "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj", texMetal);
     HierarchicalRenderable::addChild(poulpicoptereCorps, poulpicopterePales);
 
     glm::vec3 translation = glm::vec3{0,0,0};
@@ -88,7 +88,7 @@ void initialize_scene( Viewer& viewer )
     glm::vec3 scale = glm::vec3{1,1,1};
     poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
     
-    translation = glm::vec3{0,0,0};
+/*     translation = glm::vec3{0,0,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
     poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 5.0);
@@ -101,12 +101,17 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-8,6,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 15.0);
+    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 15.0); 
 
     translation = glm::vec3{-24,6,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0);
+    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0); */
+
+    translation = glm::vec3{-2,0,0};
+    orientation = glm::quat(glm::vec3(0,0,0));
+    scale = glm::vec3{1,1,1};
+    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0);
 
     bladesRotation(poulpicopterePales);
 
