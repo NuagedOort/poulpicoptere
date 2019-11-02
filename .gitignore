@@ -1,0 +1,5 @@
+CMakeCache.txt
+.vscode
+extlib*
+build*
+*build/*
