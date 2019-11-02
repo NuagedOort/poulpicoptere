@@ -17,8 +17,8 @@
 
 #include <iostream>
 
-#define ANITIME 25.0f
-#define FPS 1.0f
+#define ANITIME 23.0f
+#define FPS 24.0f
 
 void bladesRotation(UltimateMeshRenderablePtr blades, float start, float end, float acc_threshold) {
     glm::vec3 translation = glm::vec3{0,0,0};
@@ -31,7 +31,7 @@ void bladesRotation(UltimateMeshRenderablePtr blades, float start, float end, fl
             orientation = glm::quat(glm::vec3(0,rel*rel,0));
          } else {
             //orientation = glm::quat(glm::vec3(0,(rel-acc_threshold)*9.0f+25.0f,0));
-            orientation = glm::quat(glm::vec3(0,(acc_threshold*acc_threshold)*rel,0));
+            orientation = glm::quat(glm::vec3(0,(acc_threshold*acc_threshold)*rel + rel*rel,0));
          }
         blades->addLocalTransformKeyframe(GeometricTransformation(translation, orientation, scale), i);
     }
@@ -42,16 +42,17 @@ void animationObj(
     ShaderProgramPtr texShader,
     const std::string& basepath,
     const int fileNumber,
+    const int step,
     const std::string texture,
     const float start ) 
 {            
-    glm::vec3 translation = glm::vec3{0,0,0};
+    glm::vec3 translation = glm::vec3{0,-0.5,0};
     glm::quat orientation = glm::quat{1,0,0,0};
     glm::vec3 scale = glm::vec3{1,1,1};
 
     UltimateMeshRenderablePtr arr[fileNumber];
 
-    for (int i = 0; i<fileNumber; i++) {
+    for (int i = 0; i<fileNumber; i = i+step) {
         arr[i] = std::make_shared<UltimateMeshRenderable>(
             texShader,
             basepath + std::to_string(i) +".obj",
@@ -61,15 +62,14 @@ void animationObj(
         float inst = start + (i/FPS);
         // Size = 0 : Model not visible
         arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), start);
-        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst-.01f);
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst-.001f);
         // Scale to the right size at appropriate moment
         scale = glm::vec3{1,1,1};
         arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst);
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst + (step/FPS));
         // Scale back to 0 one keyframe later (according to given FPS rate)
         scale = glm::vec3{0,0,0};
-        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst + (1.0/FPS));
-
-        arr[i]->addParentTransformKeyframe(GeometricTransformation(glm::vec3{0,0,2*i}, orientation, scale), start);
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst + (step/FPS)+.001f);
 
         viewer.addRenderable(arr[i]);
     }
@@ -139,7 +139,7 @@ void initialize_scene( Viewer& viewer )
     glm::vec3 scale = glm::vec3{0,0,0};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
 
-    float offset = 10.0f;
+    float offset = 3.0f;
 
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01 + offset);
 
@@ -171,13 +171,29 @@ void initialize_scene( Viewer& viewer )
     scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0); */
 
-    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 3, texMetal, 0.0f);
+    UltimateMeshRenderablePtr temp_Corps = std::make_shared<UltimateMeshRenderable>(
+        texShader,
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.mtl",
+        texMetal);
+
+    translation = glm::vec3{0,0,0};
+    orientation = glm::quat(glm::vec3(0,0,0));
+    scale = glm::vec3{1,1,1};
+    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
+    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01f + offset);
+
+    scale = glm::vec3{0,0,0};
+    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset);
+
+    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 0.0f);
 
     bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
 
     viewer.addPointLight(pointLight1);
     viewer.addRenderable(PoulpicoptereCorps);
     viewer.addRenderable(PoulpicopterePales);
+    viewer.addRenderable(temp_Corps);
     viewer.startAnimation();
     viewer.setAnimationLoop(true, ANITIME);
 }
