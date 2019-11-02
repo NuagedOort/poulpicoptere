@@ -890,6 +890,14 @@ memory
 glm/glm.hpp
 -
 
+../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
+GeometricTransformation.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../GeometricTransformation.hpp
+map
+-
+array
+-
+
 ../../sfmlGraphicsPipeline/include/texturing/./../Renderable.hpp
 glm/glm.hpp
 -
@@ -1021,6 +1029,8 @@ glm/glm.hpp
 ../../sfmlGraphicsPipeline/include/texturing/./../lighting/Light.hpp
 ./../BezierKeyframeCollection.hpp
 ../../sfmlGraphicsPipeline/include/texturing/./../BezierKeyframeCollection.hpp
+./../KeyframeCollection.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
 string
 -
 vector

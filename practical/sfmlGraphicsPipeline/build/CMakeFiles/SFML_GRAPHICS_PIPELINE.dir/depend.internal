@@ -4856,6 +4856,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/log.hpp
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../BezierKeyframeCollection.hpp
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+ /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../KeyframeCollection.hpp
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../Renderable.hpp
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../ShaderProgram.hpp
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp

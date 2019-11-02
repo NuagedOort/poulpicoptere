@@ -37,6 +37,44 @@ void bladesRotation(UltimateMeshRenderablePtr blades, float start, float end, fl
     }
 }
 
+void animationObj(
+    Viewer& viewer,
+    ShaderProgramPtr texShader,
+    const std::string& basepath,
+    const int fileNumber,
+    const std::string texture,
+    const float start ) 
+{            
+    glm::vec3 translation = glm::vec3{0,0,0};
+    glm::quat orientation = glm::quat{1,0,0,0};
+    glm::vec3 scale = glm::vec3{1,1,1};
+
+    UltimateMeshRenderablePtr arr[fileNumber];
+
+    for (int i = 0; i<fileNumber; i++) {
+        arr[i] = std::make_shared<UltimateMeshRenderable>(
+            texShader,
+            basepath + std::to_string(i) +".obj",
+            basepath + std::to_string(i) +".mtl",
+            texture);
+
+        float inst = start + (i/FPS);
+        // Size = 0 : Model not visible
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), start);
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst-.01f);
+        // Scale to the right size at appropriate moment
+        scale = glm::vec3{1,1,1};
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst);
+        // Scale back to 0 one keyframe later (according to given FPS rate)
+        scale = glm::vec3{0,0,0};
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), inst + (1.0/FPS));
+
+        arr[i]->addParentTransformKeyframe(GeometricTransformation(glm::vec3{0,0,2*i}, orientation, scale), start);
+
+        viewer.addRenderable(arr[i]);
+    }
+}
+
 void initialize_scene( Viewer& viewer )
 {
     //Position the camera
@@ -132,6 +170,8 @@ void initialize_scene( Viewer& viewer )
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0); */
+
+    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 3, texMetal, 0.0f);
 
     bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
 

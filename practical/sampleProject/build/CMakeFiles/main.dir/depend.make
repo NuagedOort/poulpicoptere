@@ -104,6 +104,7 @@ CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/lighting/Dire
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/lighting/Light.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/texturing/./../BezierKeyframeCollection.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/texturing/./../HierarchicalRenderable.hpp
+CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/texturing/./../Renderable.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/gl_helper.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/log.hpp

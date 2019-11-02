@@ -105,6 +105,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/include/lighting/Light.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../BezierKeyframeCollection.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../HierarchicalRenderable.hpp
+ ../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../Renderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/gl_helper.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/log.hpp

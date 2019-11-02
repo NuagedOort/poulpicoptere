@@ -4855,6 +4855,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/log.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/texturing/./../BezierKeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/texturing/./../HierarchicalRenderable.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/texturing/./../KeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/texturing/./../Renderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/texturing/./../ShaderProgram.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/UltimateMeshRenderable.cpp.o: ../src/texturing/./../../include/texturing/./../lighting/./../../include/ShaderProgram.hpp
