@@ -15,8 +15,8 @@ glm::mat4 BezierKeyframeCollection::computeBezier ( float time,
 
         float factor = (time - begin->first)/(end->first - begin->first);
         //Interpolate each transformation component of the surrounding keyframes: orientation, translation, scale
-        glm::quat orientation = glm::quat(glm::slerp(begin->second.getOrientation(),end->second.getOrientation(),factor));
         glm::vec3 translation = glm::vec3(glm::lerp(begin->second.getTranslation(),end->second.getTranslation(),factor));
+        glm::quat orientation = glm::quat(glm::slerp(begin->second.getOrientation(),end->second.getOrientation(),factor));
         glm::vec3 scale = glm::vec3(glm::lerp(begin->second.getScale(),end->second.getScale(),factor));
 
         //Build a matrix transformation from the orientation, translation and scale components
@@ -24,8 +24,8 @@ glm::mat4 BezierKeyframeCollection::computeBezier ( float time,
     } else {
         std::map< float, GeometricTransformation >::const_iterator wanderer = std::next(begin);
         //Return the mean of the two matrices created by sub bezier curves
-        glm::mat4 test = glm::mat4(1.0);
-        return computeBezier(time, begin, wanderer) + computeBezier(time, wanderer, end)  * glm::mat4(0.5);
+        glm::mat4 res = (computeBezier(time, begin, wanderer) + computeBezier(time, wanderer, end)) * glm::mat4(.25f); 
+        return res; 
     }
 }
 

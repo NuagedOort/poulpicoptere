@@ -19,10 +19,13 @@ UltimateMeshRenderable::~UltimateMeshRenderable()
 }
 
 UltimateMeshRenderable::UltimateMeshRenderable(
-    ShaderProgramPtr shaderProgram, const std::string& mesh_filename, const std::string& texture_filename ) :
-    HierarchicalRenderable(shaderProgram),
-    m_pBuffer(0), m_cBuffer(0), m_nBuffer(0), m_iBuffer(0), m_tBuffer(0), m_texId( 0 )
+    ShaderProgramPtr shaderProgram, 
+    const std::string& mesh_filename, 
+    const std::string& material_filename, 
+    const std::string& texture_filename 
+    ) : HierarchicalRenderable(shaderProgram), m_pBuffer(0), m_cBuffer(0), m_nBuffer(0), m_iBuffer(0), m_tBuffer(0), m_texId( 0 )
 {
+    //read_obj(mesh_filename, material_filename, m_positions, m_indices, m_normals, m_texCoords);
     read_obj(mesh_filename, m_positions, m_indices, m_normals, m_texCoords);
     m_colors.resize( m_positions.size(), glm::vec4(1.0,1.0,1.0,1.0) );
 
@@ -164,9 +167,7 @@ void UltimateMeshRenderable::do_animate(float time) {
     //Assign the interpolated transformations from the keyframes to the local/parent transformations.
     if(!m_localKeyframes.empty())
     {
-        // setLocalTransform( m_localKeyframes.interpolateTransformation( time ) );
         setLocalTransform( m_localKeyframes.interpolateTransformation( time ) );
-
     }
     if(!m_parentKeyframes.empty())
     {

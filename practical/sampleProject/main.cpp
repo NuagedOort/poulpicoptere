@@ -17,15 +17,22 @@
 
 #include <iostream>
 
-#define ANITIME 10.0f
+#define ANITIME 25.0f
+#define FPS 1.0f
 
-void bladesRotation(UltimateMeshRenderablePtr blades) {
+void bladesRotation(UltimateMeshRenderablePtr blades, float start, float end, float acc_threshold) {
     glm::vec3 translation = glm::vec3{0,0,0};
     glm::quat orientation = glm::quat{1,0,0,0};
     glm::vec3 scale = glm::vec3{1,1,1};
 
-    for(float i = 0.0f; i < ANITIME; i = i+0.1f){
-        i<=5.0f ? orientation = glm::quat(glm::vec3(0,i*i,0)) : orientation = glm::quat(glm::vec3(0,(i-5.0f)*9.0f+25.0f,0)) ;
+    for(float i = start; i < end; i = i+0.1f){
+        float rel = i - start;
+        if(rel <= acc_threshold) {
+            orientation = glm::quat(glm::vec3(0,rel*rel,0));
+         } else {
+            //orientation = glm::quat(glm::vec3(0,(rel-acc_threshold)*9.0f+25.0f,0));
+            orientation = glm::quat(glm::vec3(0,(acc_threshold*acc_threshold)*rel,0));
+         }
         blades->addLocalTransformKeyframe(GeometricTransformation(translation, orientation, scale), i);
     }
 }
@@ -74,56 +81,66 @@ void initialize_scene( Viewer& viewer )
             5e-1,
             0);
 
-    /***********************************Poulpicoptere***********************************/
+    /********************************** Poulpicoptere***********************************/
 
 
-    UltimateMeshRenderablePtr poulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(texShader,
-            "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj", texMetal);
-    UltimateMeshRenderablePtr poulpicopterePales = std::make_shared<UltimateMeshRenderable>(texShader,
-            "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj", texMetal);
-    HierarchicalRenderable::addChild(poulpicoptereCorps, poulpicopterePales);
+    UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
+        texShader,
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.mtl",
+        texMetal);
+    UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
+        texShader,
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.mtl",
+        texMetal);
+    HierarchicalRenderable::addChild(PoulpicoptereCorps, PoulpicopterePales);
 
     glm::vec3 translation = glm::vec3{0,0,0};
     glm::quat orientation = glm::quat{1,0,0,0};
-    glm::vec3 scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
-    
-/*     translation = glm::vec3{0,0,0};
-    orientation = glm::quat(glm::vec3(0,0,0));
+    glm::vec3 scale = glm::vec3{0,0,0};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
+
+    float offset = 10.0f;
+
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01 + offset);
+
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 5.0);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0 + offset);
+    
+    translation = glm::vec3{0,0,0};
+    orientation = glm::quat(glm::vec3(0,0,0));
+    scale = glm::vec3{1,1,1}; 
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 5.0 + offset);
 
     translation = glm::vec3{0,6,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0 + offset);
         
     translation = glm::vec3{-8,6,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 15.0); 
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 15.0 + offset); 
 
     translation = glm::vec3{-24,6,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0); */
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0 + offset);
 
-    translation = glm::vec3{-2,0,0};
+    /* translation = glm::vec3{-2,0,0};
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
-    poulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0); */
 
-    bladesRotation(poulpicopterePales);
+    bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
 
     viewer.addPointLight(pointLight1);
-
-    viewer.addRenderable(poulpicoptereCorps);
-    viewer.addRenderable(poulpicopterePales);
+    viewer.addRenderable(PoulpicoptereCorps);
+    viewer.addRenderable(PoulpicopterePales);
     viewer.startAnimation();
     viewer.setAnimationLoop(true, ANITIME);
 }
-
-
 
 int main() 
 {

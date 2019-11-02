@@ -5,6 +5,7 @@
 #include "./../lighting/Material.hpp"
 #include "./../lighting/Light.hpp"
 #include "./../BezierKeyframeCollection.hpp"
+#include "./../KeyframeCollection.hpp"
 
 #include <string>
 #include <vector>
@@ -17,6 +18,7 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         UltimateMeshRenderable(
             ShaderProgramPtr program,
             const std::string& mesh_filename,
+            const std::string& material_filename, 
             const std::string& texture_filename );
         void setMaterial(const MaterialPtr& material);
         void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
@@ -32,8 +34,10 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         std::vector< glm::vec2 > m_texCoords;
         std::vector< unsigned int > m_indices;
 
-        BezierKeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
-        BezierKeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
+        //BezierKeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
+        //BezierKeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
+        KeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
+        KeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
 
         unsigned int m_pBuffer;
         unsigned int m_cBuffer;
