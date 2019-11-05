@@ -28,7 +28,7 @@ public:
 
 
 
-  glm::mat4 computeBezier ( float time,
+  GeometricTransformation computeBezier ( float time,
     std::map< float, GeometricTransformation >::const_iterator & begin,
     std::map< float, GeometricTransformation >::const_iterator & end ) const;
 
