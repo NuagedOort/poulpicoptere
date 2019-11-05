@@ -21,11 +21,11 @@ UltimateMeshRenderable::~UltimateMeshRenderable()
 UltimateMeshRenderable::UltimateMeshRenderable(
     ShaderProgramPtr shaderProgram, 
     const std::string& mesh_filename, 
-    const std::string& material_filename, 
     const std::string& texture_filename 
     ) : HierarchicalRenderable(shaderProgram), m_pBuffer(0), m_cBuffer(0), m_nBuffer(0), m_iBuffer(0), m_tBuffer(0), m_texId( 0 )
 {
     //read_obj(mesh_filename, material_filename, m_positions, m_indices, m_normals, m_texCoords);
+    setMaterial( std::make_shared<Material>(glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{1.0f,1.0f,1.0f}, 1.0f) );
     read_obj(mesh_filename, m_positions, m_indices, m_normals, m_texCoords);
     m_colors.resize( m_positions.size(), glm::vec4(1.0,1.0,1.0,1.0) );
 

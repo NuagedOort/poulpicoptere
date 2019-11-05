@@ -56,7 +56,6 @@ void animationObj(
         arr[i] = std::make_shared<UltimateMeshRenderable>(
             texShader,
             basepath + std::to_string(i) +".obj",
-            basepath + std::to_string(i) +".mtl",
             texture);
 
         float inst = start + (i/FPS);
@@ -82,47 +81,40 @@ void buildWarehouse ( Viewer& viewer ){
     UltimateMeshRenderablePtr warehouse_colums = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_columns.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_columns.mtl",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/concrete_color.png");
 
     UltimateMeshRenderablePtr warehouse_floor = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_floor.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_floor.mtl",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
 
     UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_gates.obj",
-        " ",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/gates_color.png");
 
-    UltimateMeshRenderablePtr warehouse_glass = std::make_shared<UltimateMeshRenderable>(
-        texShader,
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_glass.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_glass.mtl",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
+    // UltimateMeshRenderablePtr warehouse_glass = std::make_shared<UltimateMeshRenderable>(
+    //     texShader,
+    //     "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_glass.obj",
+    //     "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
 
     UltimateMeshRenderablePtr warehouse_metallic = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_metallic.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_metallic.mtl",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Metal_color.png");
 
     UltimateMeshRenderablePtr warehouse_roof = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_roof.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_roof.mtl",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/roof_color.png");
 
     UltimateMeshRenderablePtr warehouse_wall = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_wall.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_wall.mtl",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Bricks01_COL_VAR1_3K.jpg");
 
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_gates);
-    HierarchicalRenderable::addChild(warehouse_floor, warehouse_glass);
+    // HierarchicalRenderable::addChild(warehouse_floor, warehouse_glass);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_metallic);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_colums);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_roof);
@@ -137,7 +129,7 @@ void buildWarehouse ( Viewer& viewer ){
     viewer.addRenderable(warehouse_colums);
     viewer.addRenderable(warehouse_floor);
     viewer.addRenderable(warehouse_gates);
-    viewer.addRenderable(warehouse_glass);
+    // viewer.addRenderable(warehouse_glass);
     viewer.addRenderable(warehouse_metallic);
     viewer.addRenderable(warehouse_roof);
     viewer.addRenderable(warehouse_wall);
@@ -192,13 +184,10 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.mtl",
         texMetal);
-    //PoulpicoptereCorps->setMaterial(mat);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.mtl",
         texMetal);
     HierarchicalRenderable::addChild(PoulpicoptereCorps, PoulpicopterePales);
 
@@ -237,7 +226,6 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr temp_Corps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.mtl",
         texMetal);
 
     translation = glm::vec3{0,0,0};

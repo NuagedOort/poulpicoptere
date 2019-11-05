@@ -18,7 +18,6 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         UltimateMeshRenderable(
             ShaderProgramPtr program,
             const std::string& mesh_filename,
-            const std::string& material_filename, 
             const std::string& texture_filename );
         void setMaterial(const MaterialPtr& material);
         void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
