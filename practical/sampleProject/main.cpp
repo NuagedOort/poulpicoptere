@@ -76,8 +76,8 @@ void animationObj(
 }
 
 void buildWarehouse ( Viewer& viewer ){
-    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/simpleTextureVertex.glsl",
-                                                                    "../../sfmlGraphicsPipeline/shaders/simpleTextureFragment.glsl");
+    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/textureVertex.glsl",
+                                                                    "../../sfmlGraphicsPipeline/shaders/textureFragment.glsl");
     viewer.addShaderProgram( texShader );
     UltimateMeshRenderablePtr warehouse_colums = std::make_shared<UltimateMeshRenderable>(
         texShader,
@@ -143,72 +143,6 @@ void buildWarehouse ( Viewer& viewer ){
     viewer.addRenderable(warehouse_wall);
 }
 
-void testInit ( Viewer& viewer ){
- //Position the camera
-    viewer.getCamera().setViewMatrix( glm::lookAt( glm::vec3(0, 0, 8 ), glm::vec3(0, 0, 0), glm::vec3( 0, 1, 0 ) ) );
-
-    //Default shader
-    ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl",
-                                                                    "../../sfmlGraphicsPipeline/shaders/flatFragment.glsl");
-    viewer.addShaderProgram( flatShader );
-
-    //Add a 3D frame to the viewer
-    FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
-    viewer.addRenderable(frame);
-
-    //Temporary variables
-    glm::mat4 parentTransformation(1.0), localTransformation(1.0);
-
-    //Textured shader
-    //    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>("../shaders/textureVertex.glsl","../shaders/textureFragment.glsl");
-    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/simpleTextureVertex.glsl",
-                                                                    "../../sfmlGraphicsPipeline/shaders/simpleTextureFragment.glsl");
-    viewer.addShaderProgram( texShader );
-
-    //Multitextured shader
-    ShaderProgramPtr multiShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/multiTextureVertex.glsl",
-                                                                    "../../sfmlGraphicsPipeline/shaders/multiTextureFragment.glsl");
-    viewer.addShaderProgram( multiShader );
-
-    //Textures
-    std::string texMetal = "./../../sfmlGraphicsPipeline/textures/poulpi/MetalBare.jpg";
-
-    PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(5.0, 5.0, 3.0),
-            glm::vec3(0.0,0.0,0.0),
-            glm::vec3(1.0,0.0,0.0), 
-            glm::vec3(1.0,0.0,0.0),
-            1.0,
-            5e-1,
-            0);
-
-    glm::vec3 translation = glm::vec3{0,0,0};
-    glm::quat orientation = glm::quat{1,0,0,0};
-    glm::vec3 scale = glm::vec3{0.7f,0.7f,0.7f};
-
-
-    UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
-        texShader,
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.mtl",
-        texMetal);
-    UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
-        texShader,
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
-        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.mtl",
-        texMetal);
-    HierarchicalRenderable::addChild(PoulpicoptereCorps, PoulpicopterePales);
-
-    PoulpicoptereCorps->setParentTransform(GeometricTransformation(translation, orientation, scale).toMatrix());
-
-    viewer.addPointLight(pointLight1);
-    viewer.addRenderable(PoulpicoptereCorps);
-    viewer.addRenderable(PoulpicopterePales);
-    buildWarehouse(viewer);
-
-    viewer.startAnimation();
-    viewer.setAnimationLoop(true, ANITIME);
-}
-
 void initialize_scene( Viewer& viewer )
 {
     //Position the camera
@@ -227,15 +161,14 @@ void initialize_scene( Viewer& viewer )
     glm::mat4 parentTransformation(1.0), localTransformation(1.0);
 
     //Textured shader
-    //    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>("../shaders/textureVertex.glsl","../shaders/textureFragment.glsl");
-    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/simpleTextureVertex.glsl",
-                                                                    "../../sfmlGraphicsPipeline/shaders/simpleTextureFragment.glsl");
+    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/textureVertex.glsl",
+                                                                    "../../sfmlGraphicsPipeline/shaders/textureFragment.glsl");
     viewer.addShaderProgram( texShader );
 
     //Multitextured shader
     ShaderProgramPtr multiShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/multiTextureVertex.glsl",
                                                                     "../../sfmlGraphicsPipeline/shaders/multiTextureFragment.glsl");
-    viewer.addShaderProgram( flatShader );
+    viewer.addShaderProgram( multiShader );
 
     //Textures
     std::string texMipMap, texBun, texHalf, texFlower, texMetal;
@@ -245,10 +178,10 @@ void initialize_scene( Viewer& viewer )
     texBun = "./../../sfmlGraphicsPipeline/textures/TexturedBunny.png";
     texMetal = "./../../sfmlGraphicsPipeline/textures/poulpi/MetalBare.jpg";
 
-    PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(5.0, 5.0, 3.0),
+    PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(0, 10.0, 0),
             glm::vec3(0.0,0.0,0.0),
-            glm::vec3(1.0,0.0,0.0), 
-            glm::vec3(1.0,0.0,0.0),
+            glm::vec3(1.0,1.0,1.0), 
+            glm::vec3(0.5,0.8,1.0),
             1.0,
             5e-1,
             0);
@@ -261,6 +194,7 @@ void initialize_scene( Viewer& viewer )
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.mtl",
         texMetal);
+    //PoulpicoptereCorps->setMaterial(mat);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
@@ -299,11 +233,6 @@ void initialize_scene( Viewer& viewer )
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0 + offset);
-
-    /* translation = glm::vec3{-2,0,0};
-    orientation = glm::quat(glm::vec3(0,0,0));
-    scale = glm::vec3{1,1,1};
-    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0); */
 
     UltimateMeshRenderablePtr temp_Corps = std::make_shared<UltimateMeshRenderable>(
         texShader,
