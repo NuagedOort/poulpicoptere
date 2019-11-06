@@ -3,14 +3,9 @@
 
 #include <GeometricTransformation.hpp>
 
-#include <texturing/TexturedPlaneRenderable.hpp>
-#include <texturing/TexturedCubeRenderable.hpp>
-#include <texturing/MultiTexturedCubeRenderable.hpp>
-#include <texturing/MipMapCubeRenderable.hpp>
-#include <texturing/BillBoardPlaneRenderable.hpp>
 #include <lighting/DirectionalLightRenderable.hpp>
-#include <texturing/TexturedTriangleRenderable.hpp>
-#include <texturing/TexturedLightedMeshRenderable.hpp>
+#include <lighting/SpotLightRenderable.hpp>
+#include <lighting/LightedMeshRenderable.hpp>
 #include <texturing/UltimateMeshRenderable.hpp>
 
 #include <FrameRenderable.hpp>
@@ -75,15 +70,23 @@ void animationObj(
 }
 
 void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
+    MaterialPtr concrete = std::make_shared<Material>(
+        glm::vec3{0.0f,0.0f,0.0f}, glm::vec3{0.6f,0.6f,0.6f}, glm::vec3{0.2f,0.2f,0.2f}, 0.2f);
+
+    MaterialPtr floor = std::make_shared<Material>(
+        glm::vec3{0.0f,0.0f,0.0f}, glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{0.2f,0.2f,0.2f}, 0.2f);
+
     UltimateMeshRenderablePtr warehouse_colums = std::make_shared<UltimateMeshRenderable>(
         shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_columns.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/concrete_color.png");
+    warehouse_colums->setMaterial(concrete);
 
     UltimateMeshRenderablePtr warehouse_floor = std::make_shared<UltimateMeshRenderable>(
         shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_floor.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
+    warehouse_floor->setMaterial(floor);
 
     UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
         shader,
@@ -105,21 +108,22 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_roof.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/roof_color.png");
 
-    UltimateMeshRenderablePtr warehouse_wall = std::make_shared<UltimateMeshRenderable>(
+    UltimateMeshRenderablePtr warehouse_walls = std::make_shared<UltimateMeshRenderable>(
         shader,
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_wall.obj",
+        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_wall_concrete.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/walls_color.png");
+    warehouse_walls->setMaterial(concrete);
 
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_gates);
     // HierarchicalRenderable::addChild(warehouse_floor, warehouse_glass);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_metallic);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_colums);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_roof);
-    HierarchicalRenderable::addChild(warehouse_floor, warehouse_wall);
+    HierarchicalRenderable::addChild(warehouse_floor, warehouse_walls);
 
-    glm::vec3 translation = glm::vec3{0,0,0};
+    glm::vec3 translation = glm::vec3{0,6,2};
     glm::quat orientation = glm::quat{1,0,0,0};
-    glm::vec3 scale = glm::vec3{0.5f,0.5f,0.5f};
+    glm::vec3 scale = glm::vec3{1.5f,1.5f,1.5f};
 
     warehouse_floor->setParentTransform(GeometricTransformation(translation, orientation, scale).toMatrix());
 
@@ -129,7 +133,7 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     // viewer.addRenderable(warehouse_glass);
     viewer.addRenderable(warehouse_metallic);
     viewer.addRenderable(warehouse_roof);
-    viewer.addRenderable(warehouse_wall);
+    viewer.addRenderable(warehouse_walls);
 }
 
 void initialize_scene( Viewer& viewer )
@@ -170,6 +174,11 @@ void initialize_scene( Viewer& viewer )
     /********************************** Scene ***********************************/
     buildWarehouse(viewer, texShader);
 
+/*     LightedMeshRenderablePtr lamp = std::make_shared<LightedMeshRenderable>(
+        texShader,
+        "./../../sfmlGraphicsPipeline/meshes/lamp.obj");
+    viewer.addRenderable(lamp); */
+
     /********************************** Lighting ***********************************/
 
     // PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(0, 10.0, 0),
@@ -183,15 +192,86 @@ void initialize_scene( Viewer& viewer )
     DirectionalLightPtr directional = std::make_shared<DirectionalLight>(glm::vec3(3, -1, 2),
             glm::vec3(0.0, 0.0, 0.0),
             glm::vec3(0.5, 0.5, 0.5), 
-            glm::vec3(0.1, 0.1, 0.15));
+            glm::vec3(0.1, 0.11, 0.13));
+
+    localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
+
+    SpotLightPtr spotLight = std::make_shared<SpotLight>(
+        glm::vec3 {.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable = std::make_shared<SpotLightRenderable>(texShader, spotLight);
+    spotLightRenderable->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight2 = std::make_shared<SpotLight>(
+        glm::vec3 {20.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable2 = std::make_shared<SpotLightRenderable>(texShader, spotLight2);
+    spotLightRenderable2->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight3 = std::make_shared<SpotLight>(
+        glm::vec3 {40.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable3 = std::make_shared<SpotLightRenderable>(texShader, spotLight3);
+    spotLightRenderable3->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight4 = std::make_shared<SpotLight>(
+        glm::vec3 {-20.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable4 = std::make_shared<SpotLightRenderable>(texShader, spotLight4);
+    spotLightRenderable4->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight5 = std::make_shared<SpotLight>(
+        glm::vec3 {-40.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable5 = std::make_shared<SpotLightRenderable>(texShader, spotLight5);
+    spotLightRenderable5->setLocalTransform(localTransformation);
 
     // viewer.addPointLight(pointLight1);
     viewer.setDirectionalLight(directional);
-
+    viewer.addSpotLight(spotLight);
+    viewer.addRenderable(spotLightRenderable);
+    viewer.addSpotLight(spotLight2);
+    viewer.addRenderable(spotLightRenderable2);
+    viewer.addSpotLight(spotLight3);
+    viewer.addRenderable(spotLightRenderable3);
+    viewer.addSpotLight(spotLight4);
+    viewer.addRenderable(spotLightRenderable4);
+    viewer.addSpotLight(spotLight5);
+    viewer.addRenderable(spotLightRenderable5);
     /********************************** Poulpicoptere ***********************************/
 
 
-    /* UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
+    UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
         texMetal);
@@ -245,15 +325,15 @@ void initialize_scene( Viewer& viewer )
     temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01f + offset);
 
     scale = glm::vec3{0,0,0};
-    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset); */
+    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset);
 
     //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 0.0f);
 
-    //bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
+    bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
     
-    // viewer.addRenderable(PoulpicoptereCorps);
-    // viewer.addRenderable(PoulpicopterePales);
-    // viewer.addRenderable(temp_Corps);
+    viewer.addRenderable(PoulpicoptereCorps);
+    viewer.addRenderable(PoulpicopterePales);
+    viewer.addRenderable(temp_Corps);
     viewer.startAnimation();
     viewer.setAnimationLoop(true, ANITIME);
 }
