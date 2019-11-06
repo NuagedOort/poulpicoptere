@@ -10,6 +10,6 @@ Ke 0.0 0.0 0.0
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Bricks01_COL_VAR2_3K.jpg
-map_Ks Bricks01_REFL_3K.jpg
-refl Bricks01_GLOSS_3K.jpg
+map_Kd /home/machiavel/Documents/3D_Resources/warehouse_mono/Bricks01_COL_VAR2_3K.jpg
+map_Ks /home/machiavel/Documents/3D_Resources/warehouse_mono/Bricks01_REFL_3K.jpg
+refl /home/machiavel/Documents/3D_Resources/warehouse_mono/Bricks01_GLOSS_3K.jpg
