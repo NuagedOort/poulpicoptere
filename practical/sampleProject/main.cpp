@@ -74,22 +74,19 @@ void animationObj(
     }
 }
 
-void buildWarehouse ( Viewer& viewer ){
-    ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/textureVertex.glsl",
-                                                                    "../../sfmlGraphicsPipeline/shaders/textureFragment.glsl");
-    viewer.addShaderProgram( texShader );
+void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     UltimateMeshRenderablePtr warehouse_colums = std::make_shared<UltimateMeshRenderable>(
-        texShader,
+        shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_columns.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/concrete_color.png");
 
     UltimateMeshRenderablePtr warehouse_floor = std::make_shared<UltimateMeshRenderable>(
-        texShader,
+        shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_floor.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
 
     UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
-        texShader,
+        shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_gates.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/gates_color.png");
 
@@ -99,19 +96,19 @@ void buildWarehouse ( Viewer& viewer ){
     //     "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
 
     UltimateMeshRenderablePtr warehouse_metallic = std::make_shared<UltimateMeshRenderable>(
-        texShader,
+        shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_metallic.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Metal_color.png");
 
     UltimateMeshRenderablePtr warehouse_roof = std::make_shared<UltimateMeshRenderable>(
-        texShader,
+        shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_roof.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/roof_color.png");
 
     UltimateMeshRenderablePtr warehouse_wall = std::make_shared<UltimateMeshRenderable>(
-        texShader,
+        shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_wall.obj",
-        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Bricks01_COL_VAR1_3K.jpg");
+        "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/walls_color.png");
 
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_gates);
     // HierarchicalRenderable::addChild(warehouse_floor, warehouse_glass);
@@ -122,7 +119,7 @@ void buildWarehouse ( Viewer& viewer ){
 
     glm::vec3 translation = glm::vec3{0,0,0};
     glm::quat orientation = glm::quat{1,0,0,0};
-    glm::vec3 scale = glm::vec3{1.5f,1.5f,1.5f};
+    glm::vec3 scale = glm::vec3{0.5f,0.5f,0.5f};
 
     warehouse_floor->setParentTransform(GeometricTransformation(translation, orientation, scale).toMatrix());
 
@@ -170,18 +167,31 @@ void initialize_scene( Viewer& viewer )
     texBun = "./../../sfmlGraphicsPipeline/textures/TexturedBunny.png";
     texMetal = "./../../sfmlGraphicsPipeline/textures/poulpi/MetalBare.jpg";
 
-    PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(0, 10.0, 0),
-            glm::vec3(0.0,0.0,0.0),
-            glm::vec3(1.0,1.0,1.0), 
-            glm::vec3(0.5,0.8,1.0),
-            1.0,
-            5e-1,
-            0);
+    /********************************** Scene ***********************************/
+    buildWarehouse(viewer, texShader);
 
-    /********************************** Poulpicoptere***********************************/
+    /********************************** Lighting ***********************************/
+
+    // PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(0, 10.0, 0),
+    //         glm::vec3(0.0,0.0,0.0),
+    //         glm::vec3(1.0,1.0,1.0), 
+    //         glm::vec3(0.5,0.8,1.0),
+    //         1.0,
+    //         5e-1,
+    //         0);
+
+    DirectionalLightPtr directional = std::make_shared<DirectionalLight>(glm::vec3(3, -1, 2),
+            glm::vec3(0.0, 0.0, 0.0),
+            glm::vec3(0.5, 0.5, 0.5), 
+            glm::vec3(0.1, 0.1, 0.15));
+
+    // viewer.addPointLight(pointLight1);
+    viewer.setDirectionalLight(directional);
+
+    /********************************** Poulpicoptere ***********************************/
 
 
-    UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
+    /* UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
         texMetal);
@@ -235,18 +245,15 @@ void initialize_scene( Viewer& viewer )
     temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01f + offset);
 
     scale = glm::vec3{0,0,0};
-    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset);
+    temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset); */
 
     //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 0.0f);
 
-    bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
-
-    //buildWarehouse(viewer);
-
-    viewer.addPointLight(pointLight1);
-    viewer.addRenderable(PoulpicoptereCorps);
-    viewer.addRenderable(PoulpicopterePales);
-    viewer.addRenderable(temp_Corps);
+    //bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
+    
+    // viewer.addRenderable(PoulpicoptereCorps);
+    // viewer.addRenderable(PoulpicopterePales);
+    // viewer.addRenderable(temp_Corps);
     viewer.startAnimation();
     viewer.setAnimationLoop(true, ANITIME);
 }

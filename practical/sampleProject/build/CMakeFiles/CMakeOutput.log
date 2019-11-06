@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/machiavel/Documents/Info
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f940e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f940e.dir/build.make CMakeFiles/cmTC_f940e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cd67a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd67a.dir/build.make CMakeFiles/cmTC_cd67a.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f940e.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_f940e.dir/testCCompiler.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_f940e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f940e.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f940e.dir/testCCompiler.c.o  -o cmTC_f940e 
+Building C object CMakeFiles/cmTC_cd67a.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cd67a.dir/testCCompiler.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_cd67a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd67a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cd67a.dir/testCCompiler.c.o  -o cmTC_cd67a 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cd9c7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cd9c7.dir/build.make CMakeFiles/cmTC_cd9c7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f7dd5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7dd5.dir/build.make CMakeFiles/cmTC_f7dd5.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_cd9c7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd9c7.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o  -o cmTC_cd9c7 
+Building C object CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_f7dd5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7dd5.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o  -o cmTC_f7dd5 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
@@ -61,9 +61,9 @@ Thread model: posix
 gcc version 8.3.0 (Ubuntu 8.3.0-6ubuntu1~18.10.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cd9c7' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccC8SDDr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cd9c7 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cd9c7' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f7dd5' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqMD8zL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f7dd5 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f7dd5' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -71,14 +71,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cd9c7/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cd9c7.dir/build.make CMakeFiles/cmTC_cd9c7.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f7dd5/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f7dd5.dir/build.make CMakeFiles/cmTC_f7dd5.dir/build]
   ignore line: [make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_cd9c7]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd9c7.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o  -o cmTC_cd9c7 ]
+  ignore line: [Building C object CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_f7dd5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7dd5.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o  -o cmTC_f7dd5 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Ubuntu 8.3.0-6ubuntu1~18.10.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cd9c7' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccC8SDDr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cd9c7 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f7dd5' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqMD8zL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f7dd5 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccC8SDDr.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccqMD8zL.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cd9c7] ==> ignore
+    arg [cmTC_f7dd5] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o] ==> ignore
@@ -127,7 +127,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_cd9c7.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_f7dd5.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -159,14 +159,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c7a87/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c7a87.dir/build.make CMakeFiles/cmTC_c7a87.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7837e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7837e.dir/build.make CMakeFiles/cmTC_7837e.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c7a87.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_c7a87.dir/feature_tests.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c7a87
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7a87.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c7a87.dir/feature_tests.c.o  -o cmTC_c7a87 
+Building C object CMakeFiles/cmTC_7837e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7837e.dir/feature_tests.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7837e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7837e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7837e.dir/feature_tests.c.o  -o cmTC_7837e 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -179,14 +179,14 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_31eb3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_31eb3.dir/build.make CMakeFiles/cmTC_31eb3.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ce7d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce7d7.dir/build.make CMakeFiles/cmTC_ce7d7.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_31eb3.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_31eb3.dir/feature_tests.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_31eb3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31eb3.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_31eb3.dir/feature_tests.c.o  -o cmTC_31eb3 
+Building C object CMakeFiles/cmTC_ce7d7.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_ce7d7.dir/feature_tests.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ce7d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce7d7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ce7d7.dir/feature_tests.c.o  -o cmTC_ce7d7 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -199,14 +199,14 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9c50/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c9c50.dir/build.make CMakeFiles/cmTC_c9c50.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7fb21/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7fb21.dir/build.make CMakeFiles/cmTC_7fb21.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c9c50.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_c9c50.dir/feature_tests.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c9c50
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9c50.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c9c50.dir/feature_tests.c.o  -o cmTC_c9c50 
+Building C object CMakeFiles/cmTC_7fb21.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_7fb21.dir/feature_tests.c.o   -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7fb21
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fb21.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7fb21.dir/feature_tests.c.o  -o cmTC_7fb21 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -217,28 +217,28 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0e845/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0e845.dir/build.make CMakeFiles/cmTC_0e845.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b695e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b695e.dir/build.make CMakeFiles/cmTC_b695e.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0e845.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_0e845.dir/testCXXCompiler.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_0e845
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e845.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0e845.dir/testCXXCompiler.cxx.o  -o cmTC_0e845 
+Building CXX object CMakeFiles/cmTC_b695e.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_b695e.dir/testCXXCompiler.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b695e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b695e.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_b695e.dir/testCXXCompiler.cxx.o  -o cmTC_b695e 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_55bd8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_55bd8.dir/build.make CMakeFiles/cmTC_55bd8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_19984/fast"
+/usr/bin/make -f CMakeFiles/cmTC_19984.dir/build.make CMakeFiles/cmTC_19984.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_55bd8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55bd8.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_55bd8 
+Building CXX object CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_19984
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19984.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_19984 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
@@ -250,9 +250,9 @@ Thread model: posix
 gcc version 8.3.0 (Ubuntu 8.3.0-6ubuntu1~18.10.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_55bd8' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6uIOjV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_55bd8 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_55bd8' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_19984' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ddMra.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_19984 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_19984' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -260,14 +260,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_55bd8/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_55bd8.dir/build.make CMakeFiles/cmTC_55bd8.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_19984/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_19984.dir/build.make CMakeFiles/cmTC_19984.dir/build]
   ignore line: [make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_55bd8]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55bd8.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_55bd8 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_19984]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19984.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_19984 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
@@ -279,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Ubuntu 8.3.0-6ubuntu1~18.10.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_55bd8' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6uIOjV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_55bd8 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_19984' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8ddMra.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_19984 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc6uIOjV.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc8ddMra.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_55bd8] ==> ignore
+    arg [cmTC_19984] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o] ==> ignore
@@ -316,7 +316,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
-    arg [CMakeFiles/cmTC_55bd8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_19984.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -344,14 +344,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d9622/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d9622.dir/build.make CMakeFiles/cmTC_d9622.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5bb8a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5bb8a.dir/build.make CMakeFiles/cmTC_5bb8a.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d9622.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_d9622.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_d9622
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9622.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d9622.dir/feature_tests.cxx.o  -o cmTC_d9622 
+Building CXX object CMakeFiles/cmTC_5bb8a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_5bb8a.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5bb8a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bb8a.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5bb8a.dir/feature_tests.cxx.o  -o cmTC_5bb8a 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -417,14 +417,14 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f8900/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f8900.dir/build.make CMakeFiles/cmTC_f8900.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d5ed2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5ed2.dir/build.make CMakeFiles/cmTC_d5ed2.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f8900.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_f8900.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f8900
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8900.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f8900.dir/feature_tests.cxx.o  -o cmTC_f8900 
+Building CXX object CMakeFiles/cmTC_d5ed2.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_d5ed2.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d5ed2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5ed2.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d5ed2.dir/feature_tests.cxx.o  -o cmTC_d5ed2 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -490,14 +490,14 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e1f27/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e1f27.dir/build.make CMakeFiles/cmTC_e1f27.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0adf2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0adf2.dir/build.make CMakeFiles/cmTC_0adf2.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e1f27.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_e1f27.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e1f27
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1f27.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e1f27.dir/feature_tests.cxx.o  -o cmTC_e1f27 
+Building CXX object CMakeFiles/cmTC_0adf2.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_0adf2.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0adf2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0adf2.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0adf2.dir/feature_tests.cxx.o  -o cmTC_0adf2 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -563,14 +563,14 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f3a49/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f3a49.dir/build.make CMakeFiles/cmTC_f3a49.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_17d7f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17d7f.dir/build.make CMakeFiles/cmTC_17d7f.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f3a49.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_f3a49.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f3a49
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3a49.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f3a49.dir/feature_tests.cxx.o  -o cmTC_f3a49 
+Building CXX object CMakeFiles/cmTC_17d7f.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_17d7f.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_17d7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17d7f.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_17d7f.dir/feature_tests.cxx.o  -o cmTC_17d7f 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
@@ -636,14 +636,14 @@ make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicopter
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_34339/fast"
-/usr/bin/make -f CMakeFiles/cmTC_34339.dir/build.make CMakeFiles/cmTC_34339.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3bc2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3bc2c.dir/build.make CMakeFiles/cmTC_3bc2c.dir/build
 make[1]: Entering directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_34339.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_34339.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_34339
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34339.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_34339.dir/feature_tests.cxx.o  -o cmTC_34339 
+Building CXX object CMakeFiles/cmTC_3bc2c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_3bc2c.dir/feature_tests.cxx.o -c /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3bc2c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bc2c.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_3bc2c.dir/feature_tests.cxx.o  -o cmTC_3bc2c 
 make[1]: Leaving directory '/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/CMakeTmp'
 
 
