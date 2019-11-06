@@ -5,7 +5,7 @@
 
 #include <lighting/DirectionalLightRenderable.hpp>
 #include <lighting/SpotLightRenderable.hpp>
-#include <lighting/LightedMeshRenderable.hpp>
+#include <texturing/TexturedLightedMeshRenderable.hpp>
 #include <texturing/UltimateMeshRenderable.hpp>
 
 #include <FrameRenderable.hpp>
@@ -75,12 +75,12 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
 
     MaterialPtr floor = std::make_shared<Material>(
         glm::vec3{0.0f,0.0f,0.0f}, glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{0.2f,0.2f,0.2f}, 0.2f);
-/* 
+
     UltimateMeshRenderablePtr warehouse_colums = std::make_shared<UltimateMeshRenderable>(
         shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_columns.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/concrete_color.png");
-    warehouse_colums->setMaterial(concrete); */
+    warehouse_colums->setMaterial(concrete);
 
     UltimateMeshRenderablePtr warehouse_floor = std::make_shared<UltimateMeshRenderable>(
         shader,
@@ -88,7 +88,7 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
     warehouse_floor->setMaterial(floor);
 
- /*    UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
+    UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
         shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_gates.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/gates_color.png");
@@ -119,7 +119,7 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_metallic);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_colums);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_roof);
-    HierarchicalRenderable::addChild(warehouse_floor, warehouse_walls); */
+    HierarchicalRenderable::addChild(warehouse_floor, warehouse_walls);
 
     glm::vec3 translation = glm::vec3{0,6,2};
     glm::quat orientation = glm::quat{1,0,0,0};
@@ -127,19 +127,20 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
 
     warehouse_floor->setParentTransform(GeometricTransformation(translation, orientation, scale).toMatrix());
 
-    // viewer.addRenderable(warehouse_colums);
+    viewer.addRenderable(warehouse_colums);
     viewer.addRenderable(warehouse_floor);
-    // viewer.addRenderable(warehouse_gates);
+    viewer.addRenderable(warehouse_gates);
     // viewer.addRenderable(warehouse_glass);
-    // viewer.addRenderable(warehouse_metallic);
-    // viewer.addRenderable(warehouse_roof);
-    // viewer.addRenderable(warehouse_walls);
+    viewer.addRenderable(warehouse_metallic);
+    viewer.addRenderable(warehouse_roof);
+    viewer.addRenderable(warehouse_walls);
 }
 
 void initialize_scene( Viewer& viewer )
 {
     //Position the camera
     viewer.getCamera().setViewMatrix( glm::lookAt( glm::vec3(0, 0, 8 ), glm::vec3(0, 0, 0), glm::vec3( 0, 1, 0 ) ) );
+    viewer.getCamera().setZfar(500.0f);
 
     //Default shader
     ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl",
@@ -153,6 +154,11 @@ void initialize_scene( Viewer& viewer )
     //Temporary variables
     glm::mat4 parentTransformation(1.0), localTransformation(1.0);
 
+    //Simply lighte textured shader
+    ShaderProgramPtr simpleTexShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/simpleTextureVertex.glsl",
+                                                                    "../../sfmlGraphicsPipeline/shaders/simpleTextureFragment.glsl");
+    viewer.addShaderProgram( simpleTexShader );
+
     //Textured shader
     ShaderProgramPtr texShader = std::make_shared<ShaderProgram>(   "../../sfmlGraphicsPipeline/shaders/textureVertex.glsl",
                                                                     "../../sfmlGraphicsPipeline/shaders/textureFragment.glsl");
@@ -164,20 +170,23 @@ void initialize_scene( Viewer& viewer )
     viewer.addShaderProgram( multiShader );
 
     //Textures
-    std::string texMipMap, texBun, texHalf, texFlower, texMetal;
+    std::string texMipMap, texBun, texHalf, texFlower, texMetal, texSky;
     texMipMap = "./../../sfmlGraphicsPipeline/textures/mipmap1.png";
     texFlower = "./../../sfmlGraphicsPipeline/textures/billboardredflowers.png";
     texHalf = "./../../sfmlGraphicsPipeline/textures/halflife.png";
     texBun = "./../../sfmlGraphicsPipeline/textures/TexturedBunny.png";
     texMetal = "./../../sfmlGraphicsPipeline/textures/poulpi/MetalBare.jpg";
+    texSky = "./../../sfmlGraphicsPipeline/textures/cubemap.png";
 
     /********************************** Scene ***********************************/
     buildWarehouse(viewer, texShader);
 
-/*     LightedMeshRenderablePtr lamp = std::make_shared<LightedMeshRenderable>(
-        texShader,
-        "./../../sfmlGraphicsPipeline/meshes/lamp.obj");
-    viewer.addRenderable(lamp); */
+    UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
+        simpleTexShader,
+        "./../../sfmlGraphicsPipeline/meshes/skybox.obj",
+        texSky);
+    skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
+    viewer.addRenderable(skybox);
 
     /********************************** Lighting ***********************************/
 
