@@ -75,12 +75,12 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
 
     MaterialPtr floor = std::make_shared<Material>(
         glm::vec3{0.0f,0.0f,0.0f}, glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{0.2f,0.2f,0.2f}, 0.2f);
-
+/* 
     UltimateMeshRenderablePtr warehouse_colums = std::make_shared<UltimateMeshRenderable>(
         shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_columns.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/concrete_color.png");
-    warehouse_colums->setMaterial(concrete);
+    warehouse_colums->setMaterial(concrete); */
 
     UltimateMeshRenderablePtr warehouse_floor = std::make_shared<UltimateMeshRenderable>(
         shader,
@@ -88,7 +88,7 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/Floor_Color.png");
     warehouse_floor->setMaterial(floor);
 
-    UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
+ /*    UltimateMeshRenderablePtr warehouse_gates = std::make_shared<UltimateMeshRenderable>(
         shader,
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/wh_gates.obj",
         "./../../sfmlGraphicsPipeline/meshes/warehouse_mono/gates_color.png");
@@ -119,7 +119,7 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_metallic);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_colums);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_roof);
-    HierarchicalRenderable::addChild(warehouse_floor, warehouse_walls);
+    HierarchicalRenderable::addChild(warehouse_floor, warehouse_walls); */
 
     glm::vec3 translation = glm::vec3{0,6,2};
     glm::quat orientation = glm::quat{1,0,0,0};
@@ -127,13 +127,13 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
 
     warehouse_floor->setParentTransform(GeometricTransformation(translation, orientation, scale).toMatrix());
 
-    viewer.addRenderable(warehouse_colums);
+    // viewer.addRenderable(warehouse_colums);
     viewer.addRenderable(warehouse_floor);
-    viewer.addRenderable(warehouse_gates);
+    // viewer.addRenderable(warehouse_gates);
     // viewer.addRenderable(warehouse_glass);
-    viewer.addRenderable(warehouse_metallic);
-    viewer.addRenderable(warehouse_roof);
-    viewer.addRenderable(warehouse_walls);
+    // viewer.addRenderable(warehouse_metallic);
+    // viewer.addRenderable(warehouse_roof);
+    // viewer.addRenderable(warehouse_walls);
 }
 
 void initialize_scene( Viewer& viewer )

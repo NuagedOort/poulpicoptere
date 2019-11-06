@@ -151,6 +151,49 @@ vec3 computeSpotLight(SpotLight light, vec3 surfel_to_camera)
     return (ambient + diffuse + specular);
 }
 
+float ComputeScattering(float lightDotView) {
+    float result = 1.0f - G_SCATTERING * G_SCATTERING;
+    result /= (4.0f * PI * pow(1.0f + G_SCATTERING * G_SCATTERING - (2.0f * G_SCATTERING) *      lightDotView, 1.5f));
+    return result;
+}
+
+float4 main(const PS_INPUT input) : SV_TARGET {
+
+    float upSampledDepth = depth.Load(int3(screenCoordinates, 0)).x;
+
+    float3 color = 0.0f.xxx;
+    float totalWeight = 0.0f;
+
+    // Select the closest downscaled pixels.
+
+    int xOffset = screenCoordinates.x % 2 == 0 ? -1 : 1;
+    int yOffset = screenCoordinates.y % 2 == 0 ? -1 : 1;
+
+    int2 offsets[] = {int2(0, 0),
+    int2(0, yOffset),
+    int2(xOffset, 0),
+    int2(xOffset, yOffset)};
+
+    for (int i = 0; i < 4; i ++) {
+        float3 downscaledColor = volumetricLightTexture.Load(int3(downscaledCoordinates + offsets[i], 0));
+
+        float downscaledDepth = depth.Load(int3(downscaledCoordinates, + offsets[i] 1));
+
+        float currentWeight = 1.0f;
+        currentWeight *= max(0.0f, 1.0f - (0.05f) * abs(downscaledDepth - upSampledDepth));
+
+        color += downscaledColor * currentWeight;
+        totalWeight += currentWeight;
+    }
+
+    float3 volumetricLight;
+    const float epsilon = 0.0001f;
+    volumetricLight.xyz = color/(totalWeight + epsilon);
+
+    return float4(volumetricLight.xyz, 1.0f);
+
+}
+
 void main()
 {
     //Surface to camera vector
@@ -171,4 +214,44 @@ void main()
 
     vec4 textureColor = texture(texSampler, surfel_texCoord);
     outColor = textureColor*vec4(tmpColor,1.0);
+
+
+    // Mie scaterring approximated with Henyey-Greenstein phase function.
+    float3 worldPos = getWorldPosition(input.TexCoord);
+    float3 startPosition = g_CameraPosition;
+
+    float3 rayVector = endRayPosition.xyz- startPosition;
+
+    float rayLength = length(rayVector);
+    float3 rayDirection = rayVector / rayLength;
+
+    float stepLength = rayLength / NB_STEPS;
+
+    float3 step = rayDirection * stepLength;
+
+    float3 currentPosition = startPosition;
+
+    float3 accumFog = 0.0f.xxx;
+
+    for (int i = 0; i < NB_STEPS; i++) {
+        float4 worldInShadowCameraSpace = mul(float4(currentPosition, 1.0f), g_ShadowViewProjectionMatrix);
+        worldInShadowCameraSpace /= worldInShadowCameraSpace.w;
+
+        float shadowMapValue = shadowMap.Load(uint3(shadowmapTexCoord, 0)).r;
+
+        if (shadowMapValue > worldByShadowCamera.z) {
+            accumFog += ComputeScattering(dot(rayDirection, sunDirection)).xxx * g_SunColor;
+        }
+        currentPosition += step;
+    }
+    accumFog /= NB_STEPS;
+
+
+    ditherPattern[4][4] = {{ 0.0f, 0.5f, 0.125f, 0.625f},
+    { 0.75f, 0.22f, 0.875f, 0.375f},
+    { 0.1875f, 0.6875f, 0.0625f, 0.5625},
+    { 0.9375f, 0.4375f, 0.8125f, 0.3125}};
+
+    // Offset the start position.
+    startPosition += step * ditherValue;
 }

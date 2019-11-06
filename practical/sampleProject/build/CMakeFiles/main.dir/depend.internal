@@ -101,22 +101,16 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/include/ShaderProgram.hpp
  ../../sfmlGraphicsPipeline/include/Viewer.hpp
  ../../sfmlGraphicsPipeline/include/lighting/./../../include/ShaderProgram.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/./../lighting/Light.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
  ../../sfmlGraphicsPipeline/include/lighting/DirectionalLightRenderable.hpp
  ../../sfmlGraphicsPipeline/include/lighting/Light.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/LightedMeshRenderable.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/SpotLightRenderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../BezierKeyframeCollection.hpp
- ../../sfmlGraphicsPipeline/include/texturing/./../HierarchicalRenderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/./../KeyframeCollection.hpp
- ../../sfmlGraphicsPipeline/include/texturing/./../Renderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/gl_helper.hpp
- ../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/log.hpp
- ../../sfmlGraphicsPipeline/include/texturing/./../lighting/Light.hpp
- ../../sfmlGraphicsPipeline/include/texturing/./../lighting/Material.hpp
- ../../sfmlGraphicsPipeline/include/texturing/BillBoardPlaneRenderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/MipMapCubeRenderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/MultiTexturedCubeRenderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/TexturedCubeRenderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/TexturedLightedMeshRenderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/TexturedPlaneRenderable.hpp
- ../../sfmlGraphicsPipeline/include/texturing/TexturedTriangleRenderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/UltimateMeshRenderable.hpp
  /home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/main.cpp
