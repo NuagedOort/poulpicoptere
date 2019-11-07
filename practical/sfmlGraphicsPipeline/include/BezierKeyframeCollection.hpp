@@ -5,6 +5,9 @@
 
 # include <map>
 # include <array>
+# include <glm/glm.hpp>
+#include <iostream>
+#include <memory>
 
 /**
  * \brief An ordered collection of keyframes.
@@ -90,5 +93,7 @@ private:
    */
   std::map< float, GeometricTransformation > m_keyframes;
 };
+
+typedef std::shared_ptr<BezierKeyframeCollection> BezierKeyframeCollectionPtr;
 
 # endif 

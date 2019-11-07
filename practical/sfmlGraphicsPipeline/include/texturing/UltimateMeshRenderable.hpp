@@ -9,6 +9,7 @@
 
 #include <string>
 #include <vector>
+#include <map>
 #include <glm/glm.hpp>
 
 class UltimateMeshRenderable : public HierarchicalRenderable
@@ -19,16 +20,15 @@ class UltimateMeshRenderable : public HierarchicalRenderable
             ShaderProgramPtr program,
             const std::string& mesh_filename,
             const std::string& texture_filename,
-            const float endAnimation = -1.0 );
+            const bool setBezier = false );
         void setMaterial(const MaterialPtr& material);
-        void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
-        void addLocalTransformKeyframe( const GeometricTransformation& transformation, float time );
+        void addParentTransformKeyframe( const GeometricTransformation& transformation, float time, float endTime = 0.0f );
+        void addLocalTransformKeyframe( const GeometricTransformation& transformation, float time, float endTime = 0.0f );
 
     private:
         void do_draw();
         void do_animate( float time );
 
-        float time_end;
         bool isBezier;
 
         std::vector< glm::vec3 > m_positions;
@@ -37,8 +37,8 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         std::vector< glm::vec2 > m_texCoords;
         std::vector< unsigned int > m_indices;
 
-        BezierKeyframeCollection m_BlocalKeyframes;     /*!< A collection of keyframes for the local transformation of renderable. */
-        BezierKeyframeCollection m_BparentKeyframes;    /*!< A collection of keyframes for the parent transformation of renderable. */
+        std::map<float, BezierKeyframeCollectionPtr> m_BlocalKeyframes;     /*!< A collection of keyframes for the local transformation of renderable. */
+        std::map<float, BezierKeyframeCollectionPtr> m_BparentKeyframes;    /*!< A collection of keyframes for the parent transformation of renderable. */
         KeyframeCollection m_localKeyframes;            /*!< A collection of keyframes for the local transformation of renderable. */
         KeyframeCollection m_parentKeyframes;           /*!< A collection of keyframes for the parent transformation of renderable. */
 
