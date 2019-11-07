@@ -1,3 +1,0 @@
-/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sampleProject/build/CMakeFiles/edit_cache.dir
-/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sampleProject/build/CMakeFiles/main.dir
-/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sampleProject/build/CMakeFiles/rebuild_cache.dir

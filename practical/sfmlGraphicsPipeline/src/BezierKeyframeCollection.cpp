@@ -12,7 +12,7 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( float time,
     std::map< float, GeometricTransformation >::const_reverse_iterator & end ) const {
 
     float factor = time/endAnimation;
-    // std::cout <<"****TIME FACTOR****\nTIME : "<<time<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\n FACTOR : "<<factor<<"\n\n";
+    // std::cout <<"****TIME FACTOR****\nTIME : "<<time<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\nFACTOR : "<<factor<<"\n\n";
 
     //If given keyframes are the last adjacent two, return a linear interpolation
     if(std::next(begin)->first == end->first ){
@@ -21,6 +21,8 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( float time,
         glm::vec3 translation = glm::vec3(glm::lerp(begin->second.getTranslation(),end->second.getTranslation(),factor));
         glm::quat orientation = glm::quat(glm::slerp(begin->second.getOrientation(),end->second.getOrientation(),factor));
         glm::vec3 scale = glm::vec3(glm::lerp(begin->second.getScale(),end->second.getScale(),factor));
+
+        // std::cout << "Translation : " << translation[0] << ",\t " << translation[1] << ",\t " << translation[2] << "\n"; 
 
         //Build a matrix transformation from the orientation, translation and scale components
         return GeometricTransformation( translation, orientation, scale );
@@ -41,6 +43,8 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( float time,
         glm::quat orientation = glm::quat(glm::slerp(g_next.getOrientation(),g_rest.getOrientation(),factor));
         glm::vec3 scale = glm::vec3(glm::lerp(g_next.getScale(),g_rest.getScale(),factor));
 
+        // std::cout << "Translation : " << translation[0] << ",\t " << translation[1] << ",\t " << translation[2] << "\n";
+
         //Build a matrix transformation from the orientation, translation and scale components
         return GeometricTransformation( translation, orientation, scale ); 
     }
@@ -55,9 +59,6 @@ glm::mat4 BezierKeyframeCollection::interpolateTransformation( float time , floa
         if( time <= itFirstFrame->first ) return itFirstFrame->second.toMatrix();
         if( time >= itLastFrame->first ) return itLastFrame->second.toMatrix();
         
-        //float beginAnimation = time - itFirstFrame->first; 
-        
-        while(itFirstFrame->first < time) { itFirstFrame++; }
         // std::cout << "TIME : " << time << "\n";
         // std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
         // std::cout << "END INIT : " << itLastFrame->first << "\n\n";

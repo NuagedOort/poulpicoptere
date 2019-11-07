@@ -1,3 +1,0 @@
-/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/build/CMakeFiles/edit_cache.dir
-/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/build/CMakeFiles/SFML_GRAPHICS_PIPELINE.dir
-/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/build/CMakeFiles/rebuild_cache.dir
