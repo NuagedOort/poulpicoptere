@@ -35,7 +35,7 @@ set(GLM_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/extlib/glm-0.9.7.1" CACHE PATH
 include_directories(${GLM_INCLUDE_DIRS})
 
 #GLEW Libraries
-set(GLEW_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/extlib/glew-2.0.0/include" CACHE PATH "glew")
+set(GLEW_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/extlib/glew-1.13.0/include" CACHE PATH "glew")
 include_directories(${GLEW_INCLUDE_DIRS})
 
 #SFML Libraries

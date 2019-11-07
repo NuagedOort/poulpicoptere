@@ -37,10 +37,10 @@ set(GLM_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/../sfmlGraphicsPipeline/extlib
 include_directories(${GLM_INCLUDE_DIRS})
 
 #GLEW Libraries
-set(GLEW_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/../sfmlGraphicsPipeline/extlib/glew-2.2.0/include" CACHE PATH "glew")
+set(GLEW_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/../sfmlGraphicsPipeline/extlib/glew-1.13.0/include" CACHE PATH "glew")
 include_directories(${GLEW_INCLUDE_DIRS})
 if(UNIX)
-    set(GLEW_LIBRARIES "/usr/lib/x86_64-linux-gnu/libGLEW.so.2.0.0" CACHE FILEPATH "glew")
+    set(GLEW_LIBRARIES "/usr/lib/x86_64-linux-gnu/libGLEW.so.1.13.0" CACHE FILEPATH "glew")
 elseif(APPLE)
     message("APPLE platform not handled")
 elseif(WIN32)
