@@ -12,8 +12,9 @@
 
 #include <iostream>
 
-#define ANITIME 23.0f
+#define ANITIME 50.0f
 #define FPS 24.0f
+#define PI 3.1415926535897f         //yes, I know. Shut up. I'm tired.
 
 void bladesRotation(UltimateMeshRenderablePtr blades, float start, float end, float acc_threshold) {
     glm::vec3 translation = glm::vec3{0,0,0};
@@ -131,9 +132,9 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_roof);
     HierarchicalRenderable::addChild(warehouse_floor, warehouse_walls);
 
-    glm::vec3 translation = glm::vec3{0,6,2};
+    glm::vec3 translation = glm::vec3{0,8,2};
     glm::quat orientation = glm::quat{1,0,0,0};
-    glm::vec3 scale = glm::vec3{1.5f,1.5f,1.5f};
+    glm::vec3 scale = glm::vec3{2.0f,2.0f,2.0f};
 
     warehouse_floor->setParentTransform(GeometricTransformation(translation, orientation, scale).toMatrix());
 
@@ -295,7 +296,7 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        texMetal, ANITIME);
+        texMetal,ANITIME);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
@@ -333,6 +334,26 @@ void initialize_scene( Viewer& viewer )
     scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0 + offset);
 
+    translation = glm::vec3{-60,5,0};
+    orientation = glm::quat(glm::vec3(0,0,0));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 25.0 + offset);
+
+    translation = glm::vec3{-70,5,-25};
+    orientation = glm::quat(glm::vec3(0,0,-PI/3));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 30.0 + offset);
+
+    translation = glm::vec3{-70,5,-20};
+    orientation = glm::quat(glm::vec3(0,0,PI/3));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 31.0 + offset);
+
+    translation = glm::vec3{-70,5,-20};
+    orientation = glm::quat(glm::vec3(0,3.14,0));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 35.0 + offset);
+
     UltimateMeshRenderablePtr temp_Corps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
@@ -347,7 +368,7 @@ void initialize_scene( Viewer& viewer )
     scale = glm::vec3{0,0,0};
     temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset);
 
-    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
+    //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
 
     bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
     
