@@ -311,41 +311,39 @@ void initialize_scene( Viewer& viewer )
     glm::vec3 localTranslation = glm::vec3{-1000,0,0};
     glm::quat localOrientation = glm::quat{1,0,0,0};
     glm::vec3 localScale = glm::vec3{1,1,1};
+    
+    float offset = 6.5f;
+
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), 0);
 
-    float offset = 6.5f;
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01 + offset);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), -0.01 + offset);
 
+    /* Start of the flying animation */
     translation = glm::vec3{0,0,0};
     localTranslation = glm::vec3{0,0,0};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0 + offset);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), 0.0 + offset);
 
+    /* Blades rotation acceleration is maximal. Poulpicoptere starts to lift */
     translation = glm::vec3{0,0,0};
-    orientation = glm::quat(glm::vec3(0,0,0));
-    scale = glm::vec3{1,1,1}; 
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 5.0 + offset);
 
+    /* Highest height, the Poulpicoptere starts a gentle inclination */
     translation = glm::vec3{0,6,0};
     orientation = glm::quat(glm::vec3(0,0,0));
-    scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0 + offset);
 
     translation = glm::vec3{0,5,0};
-    orientation = glm::quat(glm::vec3(0,0,0.2));
-    scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 12.0 + offset);
-        
+    
+    /* The Poulpicoptere starts to slowly move forward */
     translation = glm::vec3{-8,6,0};
-    orientation = glm::quat(glm::vec3(0,0,0.2));
-    scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 15.0 + offset); 
 
+    /* The Poulpicoptere accelerate forward */
     translation = glm::vec3{-24,6,0};
-    orientation = glm::quat(glm::vec3(0,0,0.2));
-    scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 17.0 + offset);
 
     translation = glm::vec3{-60,5,0};
