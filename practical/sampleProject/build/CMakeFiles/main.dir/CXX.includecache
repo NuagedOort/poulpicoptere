@@ -1,10 +1,26 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
+
+../../sfmlGraphicsPipeline/extlib/glew-1.13.0/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
 
 ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/common.hpp
 detail/func_common.hpp
@@ -862,40 +878,6 @@ memory
 glm/glm.hpp
 -
 
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
-
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
-iostream
--
-ctime
--
-
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/Light.hpp
-vector
--
-GL/glew.h
--
-glm/glm.hpp
--
-./../../include/ShaderProgram.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/ShaderProgram.hpp
-
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
-./../../include/ShaderProgram.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/ShaderProgram.hpp
-./../../include/log.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/log.hpp
-./../../include/gl_helper.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/./../../include/gl_helper.hpp
-GL/glew.h
--
-glm/glm.hpp
--
-string
--
-memory
--
-
 ../../sfmlGraphicsPipeline/include/lighting/DirectionalLightRenderable.hpp
 ./../HierarchicalRenderable.hpp
 ../../sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
@@ -915,20 +897,6 @@ glm/glm.hpp
 -
 ./../../include/ShaderProgram.hpp
 ../../sfmlGraphicsPipeline/include/lighting/./../../include/ShaderProgram.hpp
-
-../../sfmlGraphicsPipeline/include/lighting/LightedMeshRenderable.hpp
-./../HierarchicalRenderable.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../HierarchicalRenderable.hpp
-./../lighting/Material.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/Material.hpp
-./../lighting/Light.hpp
-../../sfmlGraphicsPipeline/include/lighting/./../lighting/Light.hpp
-string
--
-vector
--
-glm/glm.hpp
--
 
 ../../sfmlGraphicsPipeline/include/lighting/SpotLightRenderable.hpp
 ./../HierarchicalRenderable.hpp
@@ -956,6 +924,54 @@ map
 array
 -
 
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/gl_helper.hpp
+
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/log.hpp
+iostream
+-
+ctime
+-
+
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/Light.hpp
+vector
+-
+GL/glew.h
+-
+glm/glm.hpp
+-
+./../../include/ShaderProgram.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/ShaderProgram.hpp
+
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/Material.hpp
+./../../include/ShaderProgram.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/ShaderProgram.hpp
+./../../include/log.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/log.hpp
+./../../include/gl_helper.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/./../../include/gl_helper.hpp
+GL/glew.h
+-
+glm/glm.hpp
+-
+string
+-
+memory
+-
+
+../../sfmlGraphicsPipeline/include/texturing/TexturedLightedMeshRenderable.hpp
+./../HierarchicalRenderable.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../HierarchicalRenderable.hpp
+./../lighting/Material.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/Material.hpp
+./../lighting/Light.hpp
+../../sfmlGraphicsPipeline/include/texturing/./../lighting/Light.hpp
+string
+-
+vector
+-
+glm/glm.hpp
+-
+
 ../../sfmlGraphicsPipeline/include/texturing/UltimateMeshRenderable.hpp
 ./../HierarchicalRenderable.hpp
 ../../sfmlGraphicsPipeline/include/texturing/./../HierarchicalRenderable.hpp
@@ -974,7 +990,7 @@ vector
 glm/glm.hpp
 -
 
-/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/main.cpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sampleProject/main.cpp
 Viewer.hpp
 -
 ShaderProgram.hpp
@@ -985,7 +1001,7 @@ lighting/DirectionalLightRenderable.hpp
 -
 lighting/SpotLightRenderable.hpp
 -
-lighting/LightedMeshRenderable.hpp
+texturing/TexturedLightedMeshRenderable.hpp
 -
 texturing/UltimateMeshRenderable.hpp
 -

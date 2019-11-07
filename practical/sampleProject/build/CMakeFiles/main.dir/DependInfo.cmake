@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/main.cpp" "/home/machiavel/Documents/Infographique/poulpicoptere/practical/sampleProject/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sampleProject/main.cpp" "/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sampleProject/build/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,7 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../../sfmlGraphicsPipeline/include"
   "../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1"
-  "../../sfmlGraphicsPipeline/extlib/glew-2.2.0/include"
+  "../../sfmlGraphicsPipeline/extlib/glew-1.13.0/include"
   "/usr/include/SFML"
   "../../sfmlGraphicsPipeline/extlib/freetype-2.5.5/include"
   "../../sfmlGraphicsPipeline/extlib/tinyobjloader"

@@ -1,4 +1,4 @@
-# Install script for directory: /home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5
+# Install script for directory: /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,17 +32,12 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/freetype2" TYPE DIRECTORY FILES "/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5/include/" REGEX "/internal$" EXCLUDE)
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/freetype2" TYPE DIRECTORY FILES "/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5/include/" REGEX "/internal$" EXCLUDE)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/libfreetype.a")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/libfreetype.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -53,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/machiavel/Documents/Infographique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

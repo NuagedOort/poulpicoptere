@@ -134,6 +134,81 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     viewer.addRenderable(warehouse_metallic);
     viewer.addRenderable(warehouse_roof);
     viewer.addRenderable(warehouse_walls);
+
+    /********************************** Lighting ***********************************/
+
+    glm::mat4 localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
+
+    SpotLightPtr spotLight = std::make_shared<SpotLight>(
+        glm::vec3 {.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable = std::make_shared<SpotLightRenderable>(shader, spotLight);
+    spotLightRenderable->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight2 = std::make_shared<SpotLight>(
+        glm::vec3 {20.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable2 = std::make_shared<SpotLightRenderable>(shader, spotLight2);
+    spotLightRenderable2->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight3 = std::make_shared<SpotLight>(
+        glm::vec3 {40.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable3 = std::make_shared<SpotLightRenderable>(shader, spotLight3);
+    spotLightRenderable3->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight4 = std::make_shared<SpotLight>(
+        glm::vec3 {-20.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable4 = std::make_shared<SpotLightRenderable>(shader, spotLight4);
+    spotLightRenderable4->setLocalTransform(localTransformation);
+
+    SpotLightPtr spotLight5 = std::make_shared<SpotLight>(
+        glm::vec3 {-40.0, 12.0, .0}, //Location
+        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
+        glm::vec3 {.0, .0, .0}, //Ambient
+        glm::vec3 {1.0, 0.90, .7}, //Diffuse
+        glm::vec3 {0.12, 0.11, 0.1}, //Specular
+        1.0, 0.0, 0.0,
+        std::cos(glm::radians(15.0f)),
+        std::cos(glm::radians(30.0f)));
+    SpotLightRenderablePtr spotLightRenderable5 = std::make_shared<SpotLightRenderable>(shader, spotLight5);
+    spotLightRenderable5->setLocalTransform(localTransformation);
+
+    viewer.addSpotLight(spotLight);
+    viewer.addRenderable(spotLightRenderable);
+    viewer.addSpotLight(spotLight2);
+    viewer.addRenderable(spotLightRenderable2);
+    viewer.addSpotLight(spotLight3);
+    viewer.addRenderable(spotLightRenderable3);
+    viewer.addSpotLight(spotLight4);
+    viewer.addRenderable(spotLightRenderable4);
+    viewer.addSpotLight(spotLight5);
+    viewer.addRenderable(spotLightRenderable5);
 }
 
 void initialize_scene( Viewer& viewer )
@@ -188,95 +263,13 @@ void initialize_scene( Viewer& viewer )
     skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
     viewer.addRenderable(skybox);
 
-    /********************************** Lighting ***********************************/
-
-    // PointLightPtr pointLight1 = std::make_shared<PointLight>(glm::vec3(0, 10.0, 0),
-    //         glm::vec3(0.0,0.0,0.0),
-    //         glm::vec3(1.0,1.0,1.0), 
-    //         glm::vec3(0.5,0.8,1.0),
-    //         1.0,
-    //         5e-1,
-    //         0);
-
-    DirectionalLightPtr directional = std::make_shared<DirectionalLight>(glm::vec3(3, -1, 2),
+    DirectionalLightPtr directional = std::make_shared<DirectionalLight>(glm::vec3(-3, -1, 2),
             glm::vec3(0.0, 0.0, 0.0),
             glm::vec3(0.5, 0.5, 0.5), 
             glm::vec3(0.1, 0.11, 0.13));
 
-    localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
-
-    SpotLightPtr spotLight = std::make_shared<SpotLight>(
-        glm::vec3 {.0, 12.0, .0}, //Location
-        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
-        glm::vec3 {.0, .0, .0}, //Ambient
-        glm::vec3 {1.0, 0.90, .7}, //Diffuse
-        glm::vec3 {0.12, 0.11, 0.1}, //Specular
-        1.0, 0.0, 0.0,
-        std::cos(glm::radians(15.0f)),
-        std::cos(glm::radians(30.0f)));
-    SpotLightRenderablePtr spotLightRenderable = std::make_shared<SpotLightRenderable>(texShader, spotLight);
-    spotLightRenderable->setLocalTransform(localTransformation);
-
-    SpotLightPtr spotLight2 = std::make_shared<SpotLight>(
-        glm::vec3 {20.0, 12.0, .0}, //Location
-        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
-        glm::vec3 {.0, .0, .0}, //Ambient
-        glm::vec3 {1.0, 0.90, .7}, //Diffuse
-        glm::vec3 {0.12, 0.11, 0.1}, //Specular
-        1.0, 0.0, 0.0,
-        std::cos(glm::radians(15.0f)),
-        std::cos(glm::radians(30.0f)));
-    SpotLightRenderablePtr spotLightRenderable2 = std::make_shared<SpotLightRenderable>(texShader, spotLight2);
-    spotLightRenderable2->setLocalTransform(localTransformation);
-
-    SpotLightPtr spotLight3 = std::make_shared<SpotLight>(
-        glm::vec3 {40.0, 12.0, .0}, //Location
-        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
-        glm::vec3 {.0, .0, .0}, //Ambient
-        glm::vec3 {1.0, 0.90, .7}, //Diffuse
-        glm::vec3 {0.12, 0.11, 0.1}, //Specular
-        1.0, 0.0, 0.0,
-        std::cos(glm::radians(15.0f)),
-        std::cos(glm::radians(30.0f)));
-    SpotLightRenderablePtr spotLightRenderable3 = std::make_shared<SpotLightRenderable>(texShader, spotLight3);
-    spotLightRenderable3->setLocalTransform(localTransformation);
-
-    SpotLightPtr spotLight4 = std::make_shared<SpotLight>(
-        glm::vec3 {-20.0, 12.0, .0}, //Location
-        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
-        glm::vec3 {.0, .0, .0}, //Ambient
-        glm::vec3 {1.0, 0.90, .7}, //Diffuse
-        glm::vec3 {0.12, 0.11, 0.1}, //Specular
-        1.0, 0.0, 0.0,
-        std::cos(glm::radians(15.0f)),
-        std::cos(glm::radians(30.0f)));
-    SpotLightRenderablePtr spotLightRenderable4 = std::make_shared<SpotLightRenderable>(texShader, spotLight4);
-    spotLightRenderable4->setLocalTransform(localTransformation);
-
-    SpotLightPtr spotLight5 = std::make_shared<SpotLight>(
-        glm::vec3 {-40.0, 12.0, .0}, //Location
-        glm::normalize(glm::vec3 {.0,-1.0, .0}), //Direction
-        glm::vec3 {.0, .0, .0}, //Ambient
-        glm::vec3 {1.0, 0.90, .7}, //Diffuse
-        glm::vec3 {0.12, 0.11, 0.1}, //Specular
-        1.0, 0.0, 0.0,
-        std::cos(glm::radians(15.0f)),
-        std::cos(glm::radians(30.0f)));
-    SpotLightRenderablePtr spotLightRenderable5 = std::make_shared<SpotLightRenderable>(texShader, spotLight5);
-    spotLightRenderable5->setLocalTransform(localTransformation);
-
-    // viewer.addPointLight(pointLight1);
     viewer.setDirectionalLight(directional);
-    viewer.addSpotLight(spotLight);
-    viewer.addRenderable(spotLightRenderable);
-    viewer.addSpotLight(spotLight2);
-    viewer.addRenderable(spotLightRenderable2);
-    viewer.addSpotLight(spotLight3);
-    viewer.addRenderable(spotLightRenderable3);
-    viewer.addSpotLight(spotLight4);
-    viewer.addRenderable(spotLightRenderable4);
-    viewer.addSpotLight(spotLight5);
-    viewer.addRenderable(spotLightRenderable5);
+
     /********************************** Poulpicoptere ***********************************/
 
 
