@@ -58,9 +58,9 @@ glm::mat4 BezierKeyframeCollection::interpolateTransformation( float time , floa
         //float beginAnimation = time - itFirstFrame->first; 
         
         while(itFirstFrame->first < time) { itFirstFrame++; }
-        std::cout << "TIME : " << time << "\n";
-        std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
-        std::cout << "END INIT : " << itLastFrame->first << "\n\n";
+        // std::cout << "TIME : " << time << "\n";
+        // std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
+        // std::cout << "END INIT : " << itLastFrame->first << "\n\n";
         
         //Case where only one keyframe has been set
         if(itFirstFrame->first == itLastFrame->first) {  return (itLastFrame->second).toMatrix();    }

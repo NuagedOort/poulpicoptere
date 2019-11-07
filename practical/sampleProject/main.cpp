@@ -221,11 +221,11 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     viewer.addRenderable(spotLightRenderable5);
 
     //turning the lights on at n seconds
-    addLightDirSwitch(viewer,spotLightRenderable,3,"on");
-    addLightDirSwitch(viewer,spotLightRenderable2,3,"on");
-    addLightDirSwitch(viewer,spotLightRenderable3,3,"on");
-    addLightDirSwitch(viewer,spotLightRenderable4,3,"on");
-    addLightDirSwitch(viewer,spotLightRenderable5,3,"on");
+    addLightDirSwitch(viewer,spotLightRenderable3,1.5,"on");
+    addLightDirSwitch(viewer,spotLightRenderable2,2.0,"on");
+    addLightDirSwitch(viewer,spotLightRenderable,2.5,"on");
+    addLightDirSwitch(viewer,spotLightRenderable4,3.0,"on");
+    addLightDirSwitch(viewer,spotLightRenderable5,3.5,"on");
 }
 
 
@@ -263,13 +263,14 @@ void initialize_scene( Viewer& viewer )
     viewer.addShaderProgram( multiShader );
 
     //Textures
-    std::string texMipMap, texBun, texHalf, texFlower, texMetal, texSky;
+    std::string texMipMap, texBun, texHalf, texFlower, texMetal, texSky, texWater;
     texMipMap = "./../../sfmlGraphicsPipeline/textures/mipmap1.png";
     texFlower = "./../../sfmlGraphicsPipeline/textures/billboardredflowers.png";
     texHalf = "./../../sfmlGraphicsPipeline/textures/halflife.png";
     texBun = "./../../sfmlGraphicsPipeline/textures/TexturedBunny.png";
     texMetal = "./../../sfmlGraphicsPipeline/textures/poulpi/MetalBare.jpg";
     texSky = "./../../sfmlGraphicsPipeline/textures/cubemap.png";
+    texWater = "./../../sfmlGraphicsPipeline/textures/waterbox.png";
 
     /********************************** Scene ***********************************/
     buildWarehouse(viewer, texShader);
@@ -277,7 +278,7 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
         simpleTexShader,
         "./../../sfmlGraphicsPipeline/meshes/skybox.obj",
-        texSky);
+        texWater);
     skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
     viewer.addRenderable(skybox);
 
@@ -306,8 +307,7 @@ void initialize_scene( Viewer& viewer )
     glm::vec3 scale = glm::vec3{0,0,0};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
 
-    float offset = 3.0f;
-    //float offset = 0.0f;
+    float offset = 6.5f;
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01 + offset);
 
     scale = glm::vec3{1,1,1};
@@ -347,7 +347,7 @@ void initialize_scene( Viewer& viewer )
     scale = glm::vec3{0,0,0};
     temp_Corps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0f + offset);
 
-    //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 0.0f);
+    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
 
     bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
     
