@@ -1127,6 +1127,8 @@ array
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
 glm/glm.hpp
 -
+HierarchicalRenderable.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
 
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/CubeRenderable.hpp
 Renderable.hpp
@@ -1587,6 +1589,8 @@ iomanip
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Camera.hpp
 glm/glm.hpp
 -
+HierarchicalRenderable.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
 
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
 chrono

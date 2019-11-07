@@ -9,6 +9,7 @@
  */
 
 #include <glm/glm.hpp>
+#include "HierarchicalRenderable.hpp"
 /**@brief Manage the Camera.
  *
  * We consider a camera to be defined by two 4x4 matrices:
@@ -59,6 +60,11 @@ public:
      * @param time Current simulation time.
      */
     void animate( float time );
+
+    /**
+     *
+     */
+    void setTarget ( HierarchicalRenderablePtr target );
 
     /**
      * @name Camera View Matrix
@@ -283,6 +289,7 @@ private:
     float m_zfar;
     glm::mat4 m_view;
     glm::mat4 m_projection;
+    HierarchicalRenderablePtr trackedObject;
 };
 
 #endif

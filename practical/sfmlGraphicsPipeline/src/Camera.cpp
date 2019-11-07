@@ -10,7 +10,7 @@ using namespace std;
 Camera::Camera()
     : m_view{ glm::lookAt( glm::vec3{0, 0, -5}, glm::vec3{}, glm::vec3{0,1,0}) },
       m_fov{ 1.04f }, m_ratio{ 1.0f }, m_znear{ 1.0f }, m_zfar{ 100.0f },
-      m_mouseBehavior{ ARCBALL_BEHAVIOR }
+      m_mouseBehavior{ SPACESHIP_BEHAVIOR }
 {}
 
 Camera::~Camera()
@@ -20,6 +20,15 @@ Camera::~Camera()
 
 void Camera::animate(float time)
 {
+    if (trackedObject != NULL ) {
+        glm::mat4 transform = trackedObject->getParentTransform();
+        glm::vec3 position = glm::vec3 {transform[3][0], transform[3][1], transform[3][2]};
+        setViewMatrix( glm::lookAt( getPosition(), position, glm::vec3{0,1,0}));
+    } 
+}
+
+void Camera::setTarget ( HierarchicalRenderablePtr target ){
+    trackedObject = target;
 }
 
 const glm::mat4& Camera::viewMatrix() const

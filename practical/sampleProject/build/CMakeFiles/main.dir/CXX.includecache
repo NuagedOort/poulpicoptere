@@ -789,6 +789,8 @@ detail/func_vector_relational.hpp
 ../../sfmlGraphicsPipeline/include/Camera.hpp
 glm/glm.hpp
 -
+HierarchicalRenderable.hpp
+../../sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
 
 ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
 chrono
@@ -806,6 +808,16 @@ glm/glm.hpp
 glm/glm.hpp
 -
 glm/gtc/quaternion.hpp
+-
+
+../../sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+Renderable.hpp
+../../sfmlGraphicsPipeline/include/Renderable.hpp
+vector
+-
+memory
+-
+glm/glm.hpp
 -
 
 ../../sfmlGraphicsPipeline/include/Renderable.hpp
