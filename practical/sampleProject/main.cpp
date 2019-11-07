@@ -296,7 +296,7 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        texMetal,ANITIME);
+        texMetal);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
@@ -323,36 +323,56 @@ void initialize_scene( Viewer& viewer )
     orientation = glm::quat(glm::vec3(0,0,0));
     scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 10.0 + offset);
+
+    translation = glm::vec3{0,5,0};
+    orientation = glm::quat(glm::vec3(0,0,0.2));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 12.0 + offset);
         
     translation = glm::vec3{-8,6,0};
-    orientation = glm::quat(glm::vec3(0,0,0));
+    orientation = glm::quat(glm::vec3(0,0,0.2));
     scale = glm::vec3{1,1,1};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 15.0 + offset); 
 
     translation = glm::vec3{-24,6,0};
-    orientation = glm::quat(glm::vec3(0,0,0));
+    orientation = glm::quat(glm::vec3(0,0,0.2));
     scale = glm::vec3{1,1,1};
-    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0 + offset);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 17.0 + offset);
 
     translation = glm::vec3{-60,5,0};
-    orientation = glm::quat(glm::vec3(0,0,0));
+    orientation = glm::quat(glm::vec3(0,0,0.2));
     scale = glm::vec3{1,1,1};
-    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 25.0 + offset);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0 + offset);
 
     translation = glm::vec3{-70,5,-25};
     orientation = glm::quat(glm::vec3(0,0,-PI/3));
     scale = glm::vec3{1,1,1};
-    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 30.0 + offset);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 25.0 + offset);
 
     translation = glm::vec3{-70,5,-20};
     orientation = glm::quat(glm::vec3(0,0,PI/3));
     scale = glm::vec3{1,1,1};
-    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 31.0 + offset);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 26.0 + offset);
 
     translation = glm::vec3{-70,5,-20};
-    orientation = glm::quat(glm::vec3(0,3.14,0));
+    orientation = glm::quat(glm::vec3(0,PI,-0.2));
     scale = glm::vec3{1,1,1};
-    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 35.0 + offset);
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 27.0 + offset);
+
+    translation = glm::vec3{5,5,-20};
+    orientation = glm::quat(glm::vec3(0,PI,-0.2));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 30.0 + offset);
+
+    translation = glm::vec3{10,5,-10};
+    orientation = glm::quat(glm::vec3(0.2,PI/2,-0.2));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 30.5 + offset);
+
+    translation = glm::vec3{20,5,5};
+    orientation = glm::quat(glm::vec3(0.2,0,-0.2));
+    scale = glm::vec3{1,1,1};
+    PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 31.0 + offset);
 
     UltimateMeshRenderablePtr temp_Corps = std::make_shared<UltimateMeshRenderable>(
         texShader,
