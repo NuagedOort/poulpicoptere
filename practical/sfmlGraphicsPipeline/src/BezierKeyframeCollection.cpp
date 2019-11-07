@@ -12,7 +12,7 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( float time,
     std::map< float, GeometricTransformation >::const_reverse_iterator & end ) const {
 
     float factor = time/endAnimation;
-    std::cout <<"****TIME FACTOR****\nTIME : "<<time<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\n FACTOR : "<<factor<<"\n\n";
+    // std::cout <<"****TIME FACTOR****\nTIME : "<<time<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\n FACTOR : "<<factor<<"\n\n";
 
     //If given keyframes are the last adjacent two, return a linear interpolation
     if(std::next(begin)->first == end->first ){
@@ -58,8 +58,9 @@ glm::mat4 BezierKeyframeCollection::interpolateTransformation( float time , floa
         //float beginAnimation = time - itFirstFrame->first; 
         
         while(itFirstFrame->first < time) { itFirstFrame++; }
-        // std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
-        // std::cout << "END INIT : " << itLastFrame->first << "\n\n";
+        std::cout << "TIME : " << time << "\n";
+        std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
+        std::cout << "END INIT : " << itLastFrame->first << "\n\n";
         
         //Case where only one keyframe has been set
         if(itFirstFrame->first == itLastFrame->first) {  return (itLastFrame->second).toMatrix();    }
