@@ -294,7 +294,7 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        texMetal);
+        texMetal, ANITIME);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",

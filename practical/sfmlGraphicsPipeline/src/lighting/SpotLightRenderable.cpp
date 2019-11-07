@@ -147,10 +147,10 @@ void SpotLightRenderable::do_animate(float time) {
             if(switches[i].first <= time && time <switches[i+1].first){
                 if(switches[i].second){           //we are switching the light "on"
                     m_light->setSpotDirection(glm::normalize(glm::vec3 {.0,-1.0, .0}));
-                    std::cout << "turning the lights on\n" << std::endl;
+                    // std::cout << "turning the lights on\n" << std::endl;
                 }else{
                     m_light->setSpotDirection(glm::normalize(glm::vec3 {.0,1.0, .0}));
-                    std::cout << "turning the lights off\n" << std::endl;
+                    // std::cout << "turning the lights off\n" << std::endl;
                 }
                 return;
             }

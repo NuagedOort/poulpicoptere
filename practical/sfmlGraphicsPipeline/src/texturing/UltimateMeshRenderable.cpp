@@ -21,12 +21,17 @@ UltimateMeshRenderable::~UltimateMeshRenderable()
 UltimateMeshRenderable::UltimateMeshRenderable(
     ShaderProgramPtr shaderProgram, 
     const std::string& mesh_filename, 
-    const std::string& texture_filename 
+    const std::string& texture_filename,
+    const float endAnimation 
     ) : HierarchicalRenderable(shaderProgram), m_pBuffer(0), m_cBuffer(0), m_nBuffer(0), m_iBuffer(0), m_tBuffer(0), m_texId( 0 )
 {
     setMaterial( std::make_shared<Material>(glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{1.0f,1.0f,1.0f}, glm::vec3{1.0f,1.0f,1.0f}, 1.0f) );
     read_obj(mesh_filename, m_positions, m_indices, m_normals, m_texCoords);
     m_colors.resize( m_positions.size(), glm::vec4(1.0,1.0,1.0,1.0) );
+
+    // Check if an animation time has been set to a coherent value, else, use bezier interpolation mode
+    endAnimation <= -1.0 ? isBezier = false : isBezier = true;
+    time_end = endAnimation;
 
     //Create buffers
     glcheck(glGenBuffers(1, &m_pBuffer)); //vertices
@@ -67,12 +72,20 @@ UltimateMeshRenderable::UltimateMeshRenderable(
 
 void UltimateMeshRenderable::addLocalTransformKeyframe( const GeometricTransformation& transformation, float time )
 {
-  m_localKeyframes.add( transformation, time );
+    if (isBezier) {
+        m_BlocalKeyframes.add( transformation, time );
+    } else {
+        m_localKeyframes.add( transformation, time );
+    }
 }
 
 void UltimateMeshRenderable::addParentTransformKeyframe( const GeometricTransformation& transformation, float time )
 {
-  m_parentKeyframes.add( transformation, time );
+    if(isBezier) { 
+        m_BparentKeyframes.add( transformation, time );
+    } else {
+        m_parentKeyframes.add( transformation, time );
+    }
 }
 
 void UltimateMeshRenderable::do_draw()
@@ -164,13 +177,20 @@ void UltimateMeshRenderable::do_draw()
 
 void UltimateMeshRenderable::do_animate(float time) {
     //Assign the interpolated transformations from the keyframes to the local/parent transformations.
-    if(!m_localKeyframes.empty())
-    {
-        setLocalTransform( m_localKeyframes.interpolateTransformation( time ) );
-    }
-    if(!m_parentKeyframes.empty())
-    {
-        setParentTransform( m_parentKeyframes.interpolateTransformation( time ) );
+    if (isBezier) {     //Technically, this test could be removed, but we do not want collisions between the two modes of interpolation
+        if(!m_BlocalKeyframes.empty()) {
+            setLocalTransform( m_BlocalKeyframes.interpolateTransformation( time, time_end ) );
+        }
+        if(!m_BparentKeyframes.empty()) {
+            setParentTransform( m_BparentKeyframes.interpolateTransformation( time, time_end ) );
+        }
+    } else {
+        if(!m_localKeyframes.empty()) {
+            setLocalTransform( m_localKeyframes.interpolateTransformation( time ) );
+        }
+        if(!m_parentKeyframes.empty()) {
+            setParentTransform( m_parentKeyframes.interpolateTransformation( time ) );
+        }
     }
 }
 

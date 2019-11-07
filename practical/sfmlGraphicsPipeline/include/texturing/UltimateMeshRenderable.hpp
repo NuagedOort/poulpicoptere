@@ -18,7 +18,8 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         UltimateMeshRenderable(
             ShaderProgramPtr program,
             const std::string& mesh_filename,
-            const std::string& texture_filename );
+            const std::string& texture_filename,
+            const float endAnimation = -1.0 );
         void setMaterial(const MaterialPtr& material);
         void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
         void addLocalTransformKeyframe( const GeometricTransformation& transformation, float time );
@@ -27,16 +28,19 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         void do_draw();
         void do_animate( float time );
 
+        float time_end;
+        bool isBezier;
+
         std::vector< glm::vec3 > m_positions;
         std::vector< glm::vec3 > m_normals;
         std::vector< glm::vec4 > m_colors;
         std::vector< glm::vec2 > m_texCoords;
         std::vector< unsigned int > m_indices;
 
-        //BezierKeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
-        //BezierKeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
-        KeyframeCollection m_localKeyframes; /*!< A collection of keyframes for the local transformation of renderable. */
-        KeyframeCollection m_parentKeyframes; /*!< A collection of keyframes for the parent transformation of renderable. */
+        BezierKeyframeCollection m_BlocalKeyframes;     /*!< A collection of keyframes for the local transformation of renderable. */
+        BezierKeyframeCollection m_BparentKeyframes;    /*!< A collection of keyframes for the parent transformation of renderable. */
+        KeyframeCollection m_localKeyframes;            /*!< A collection of keyframes for the local transformation of renderable. */
+        KeyframeCollection m_parentKeyframes;           /*!< A collection of keyframes for the parent transformation of renderable. */
 
         unsigned int m_pBuffer;
         unsigned int m_cBuffer;
