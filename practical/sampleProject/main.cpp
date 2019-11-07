@@ -69,6 +69,16 @@ void animationObj(
     }
 }
 
+void addLightDirSwitch(Viewer & viewer, SpotLightRenderablePtr spot, float time, std::string val)
+{
+    if(val=="on"){
+        spot->add_switch(time,true);
+    }
+    if(val=="off"){
+        spot->add_switch(time,false);
+    }
+}
+
 void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     MaterialPtr concrete = std::make_shared<Material>(
         glm::vec3{0.0f,0.0f,0.0f}, glm::vec3{0.6f,0.6f,0.6f}, glm::vec3{0.2f,0.2f,0.2f}, 0.2f);
@@ -209,7 +219,15 @@ void buildWarehouse ( Viewer& viewer, ShaderProgramPtr shader ){
     viewer.addRenderable(spotLightRenderable4);
     viewer.addSpotLight(spotLight5);
     viewer.addRenderable(spotLightRenderable5);
+
+    //turning the lights on at n seconds
+    addLightDirSwitch(viewer,spotLightRenderable,3,"on");
+    addLightDirSwitch(viewer,spotLightRenderable2,3,"on");
+    addLightDirSwitch(viewer,spotLightRenderable3,3,"on");
+    addLightDirSwitch(viewer,spotLightRenderable4,3,"on");
+    addLightDirSwitch(viewer,spotLightRenderable5,3,"on");
 }
+
 
 void initialize_scene( Viewer& viewer )
 {

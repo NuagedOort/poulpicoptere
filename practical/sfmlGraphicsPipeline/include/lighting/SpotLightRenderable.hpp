@@ -12,6 +12,7 @@ class SpotLightRenderable : public HierarchicalRenderable
 public:
     ~SpotLightRenderable();
     SpotLightRenderable( ShaderProgramPtr program, SpotLightPtr light);
+    void add_switch(float time, bool val);
 
 private:
     void do_draw();
@@ -20,6 +21,8 @@ private:
     std::vector< glm::vec3 > m_positions;
     std::vector< glm::vec4 > m_colors;
     std::vector< glm::vec3 > m_normals;
+
+    std::vector<std::pair<float,bool>> switches;
 
     unsigned int m_pBuffer;
     unsigned int m_cBuffer;

@@ -12,6 +12,7 @@ SpotLightRenderable::SpotLightRenderable(ShaderProgramPtr shaderProgram, SpotLig
     HierarchicalRenderable(shaderProgram), m_light(light),
     m_pBuffer(0), m_cBuffer(0), m_nBuffer(0)
 {
+    std::vector<std::pair<float,bool>> switches;
     std::vector<glm::vec3> tmp_x, tmp_n;
     unsigned int strips=20, slices=20;
 
@@ -105,7 +106,57 @@ void SpotLightRenderable::do_draw()
     }
 }
 
-void SpotLightRenderable::do_animate(float /*time*/) {}
+void SpotLightRenderable::add_switch(float time, bool val)
+{
+    switches.push_back(std::make_pair(time,val));
+    std::sort(switches.begin(), switches.end());
+    if(switches[0].first != 0){
+        switches.push_back(std::make_pair(0,false));
+        std::sort(switches.begin(),switches.end());
+    }
+    if(switches[switches.size()-1].first!=1000){
+        switches.push_back(std::make_pair(1000,true));
+        std::sort(switches.begin(),switches.end());
+    }
+    std::cout << "----------" << std::endl;
+    for(int i=0;i< switches.size();i++)    {
+        std::cout << switches[i].first << " : " << switches[i].second << std::endl;
+    }
+    
+    
+}
+
+void SpotLightRenderable::do_animate(float time) {
+    //std::cout << "it's animating, switches size is " << switches.size() << std::endl;
+    if(!switches.empty()){
+        int i = 0;
+        /*for(i;i<switchtimes.size();i++){     //looking at the equivalent of "keyframes" for the light switch
+            if(switchtimes[i] == time ){       //if we are on a light switch event
+
+                if(switchvals[i]){           //we are switching the light "on"
+                    m_light->setSpotDirection(glm::normalize(glm::vec3 {.0,-1.0, .0}));
+                    cout << "turning the lights on" << endl
+                }else{
+                    m_light->setSpotDirection(glm::normalize(glm::vec3 {.0,1.0, .0}));
+                }
+                return;
+            }
+        }*/
+
+        for(i=0; i< switches.size()-1;i++){
+            if(switches[i].first <= time && time <switches[i+1].first){
+                if(switches[i].second){           //we are switching the light "on"
+                    m_light->setSpotDirection(glm::normalize(glm::vec3 {.0,-1.0, .0}));
+                    std::cout << "turning the lights on\n" << std::endl;
+                }else{
+                    m_light->setSpotDirection(glm::normalize(glm::vec3 {.0,1.0, .0}));
+                    std::cout << "turning the lights off\n" << std::endl;
+                }
+                return;
+            }
+        }
+    }
+}
 
 SpotLightRenderable::~SpotLightRenderable()
 {
