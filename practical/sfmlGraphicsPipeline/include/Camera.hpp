@@ -10,6 +10,8 @@
 
 #include <glm/glm.hpp>
 #include "HierarchicalRenderable.hpp"
+#include "GeometricTransformation.hpp"
+#include "KeyframeCollection.hpp"
 /**@brief Manage the Camera.
  *
  * We consider a camera to be defined by two 4x4 matrices:
@@ -62,9 +64,11 @@ public:
     void animate( float time );
 
     /**
-     *
+     * This function provide an object to be tracked by the camera in animate method
      */
     void setTarget ( HierarchicalRenderablePtr target );
+
+    void addKeyframe( const GeometricTransformation& transformation, float time );
 
     /**
      * @name Camera View Matrix
@@ -289,7 +293,9 @@ private:
     float m_zfar;
     glm::mat4 m_view;
     glm::mat4 m_projection;
+    // Object tracked by the camera. Must be a HierarchicalRenderable or inherited class
     HierarchicalRenderablePtr trackedObject;
+    KeyframeCollection m_keyframes;           /*!< A collection of keyframes for transformation of the camera. */
 };
 
 #endif

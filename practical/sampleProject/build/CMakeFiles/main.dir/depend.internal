@@ -99,6 +99,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/include/FrameRenderable.hpp
  ../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp
  ../../sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ ../../sfmlGraphicsPipeline/include/KeyframeCollection.hpp
  ../../sfmlGraphicsPipeline/include/Renderable.hpp
  ../../sfmlGraphicsPipeline/include/ShaderProgram.hpp
  ../../sfmlGraphicsPipeline/include/Viewer.hpp

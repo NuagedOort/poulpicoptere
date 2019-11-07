@@ -20,15 +20,26 @@ Camera::~Camera()
 
 void Camera::animate(float time)
 {
+    glm::mat4 transform;
+    glm::vec3 position;
+    
+    transform = m_keyframes.interpolateTransformation( time );
+    position = glm::vec3 {transform[3][0], transform[3][1], transform[3][2]};
+    setPosition( position );
+    
     if (trackedObject != NULL ) {
-        glm::mat4 transform = trackedObject->getParentTransform();
-        glm::vec3 position = glm::vec3 {transform[3][0], transform[3][1], transform[3][2]};
+        transform = trackedObject->getParentTransform();
+        position = glm::vec3 {transform[3][0], transform[3][1], transform[3][2]};
         setViewMatrix( glm::lookAt( getPosition(), position, glm::vec3{0,1,0}));
     } 
 }
 
 void Camera::setTarget ( HierarchicalRenderablePtr target ){
     trackedObject = target;
+}
+
+void Camera::addKeyframe( const GeometricTransformation& transformation, float time ) {
+    m_keyframes.add( transformation, time );
 }
 
 const glm::mat4& Camera::viewMatrix() const

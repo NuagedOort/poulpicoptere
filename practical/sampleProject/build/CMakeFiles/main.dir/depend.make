@@ -98,6 +98,7 @@ CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/FPSCounter.hp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/FrameRenderable.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/KeyframeCollection.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/Renderable.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/ShaderProgram.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/Viewer.hpp

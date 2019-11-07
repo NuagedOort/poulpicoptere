@@ -354,6 +354,23 @@ void initialize_scene( Viewer& viewer )
     viewer.addRenderable(PoulpicoptereCorps);
     viewer.addRenderable(PoulpicopterePales);
     viewer.addRenderable(temp_Corps);
+
+    viewer.getCamera().setTarget(PoulpicoptereCorps);
+    
+    translation = glm::vec3{40,1,0};
+    orientation = glm::quat{1,0,0,0};
+    scale = glm::vec3{1,1,1};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 0.0);
+
+    translation = glm::vec3{0,1,5};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 0.75f);
+
+    translation = glm::vec3{-40,1,0};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 1.25f);
+
+    translation = glm::vec3{-40,10,0};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 10.0);
+
     viewer.startAnimation();
     viewer.setAnimationLoop(true, ANITIME);
 }

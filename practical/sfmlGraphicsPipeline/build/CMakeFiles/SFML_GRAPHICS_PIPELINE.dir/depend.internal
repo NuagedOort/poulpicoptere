@@ -183,7 +183,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/Camera.cpp
@@ -858,7 +860,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
@@ -1510,7 +1514,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
@@ -1795,7 +1801,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Camera.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/FPSCounter.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Renderable.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/ShaderProgram.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/Viewer.hpp
@@ -2369,8 +2377,10 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Camera.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalCylinderRenderable.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
+ /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/KeyframeCollection.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Renderable.hpp
  /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/ShaderProgram.hpp

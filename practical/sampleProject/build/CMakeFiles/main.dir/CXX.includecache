@@ -791,6 +791,10 @@ glm/glm.hpp
 -
 HierarchicalRenderable.hpp
 ../../sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+GeometricTransformation.hpp
+../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+KeyframeCollection.hpp
+../../sfmlGraphicsPipeline/include/KeyframeCollection.hpp
 
 ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
 chrono
@@ -818,6 +822,14 @@ vector
 memory
 -
 glm/glm.hpp
+-
+
+../../sfmlGraphicsPipeline/include/KeyframeCollection.hpp
+GeometricTransformation.hpp
+../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+map
+-
+array
 -
 
 ../../sfmlGraphicsPipeline/include/Renderable.hpp

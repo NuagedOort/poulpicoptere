@@ -182,7 +182,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/gl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/./../include/Camera.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/./../include/GeometricTransformation.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/./../include/HierarchicalRenderable.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/./../include/KeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/./../include/Renderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/./../include/ShaderProgram.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../src/Camera.cpp
@@ -857,7 +859,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../extli
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/Camera.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/FPSCounter.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/GeometricTransformation.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/HierarchicalRenderable.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/KeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/Renderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/ShaderProgram.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o: ../src/./../include/Viewer.hpp
@@ -1509,7 +1513,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../extlib/glm-0.9.7.
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/Camera.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/FPSCounter.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/GeometricTransformation.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/HierarchicalRenderable.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/KeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/Renderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/ShaderProgram.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o: ../src/./../include/Viewer.hpp
@@ -1794,7 +1800,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../extlib/glm-0.9.7.1/gl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/Camera.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/FPSCounter.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/GeometricTransformation.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/HierarchicalRenderable.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/KeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/Renderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/ShaderProgram.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o: ../src/./../include/Viewer.hpp
@@ -2368,8 +2376,10 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/Camera.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/FPSCounter.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/GeometricTransformation.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/HierarchicalCylinderRenderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/HierarchicalRenderable.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/KeyframeCollection.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/Plane.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/Renderable.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o: ../src/dynamics/./../../include/ShaderProgram.hpp

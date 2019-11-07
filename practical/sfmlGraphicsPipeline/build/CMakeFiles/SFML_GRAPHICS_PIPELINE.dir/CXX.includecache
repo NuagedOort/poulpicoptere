@@ -1129,6 +1129,10 @@ glm/glm.hpp
 -
 HierarchicalRenderable.hpp
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/HierarchicalRenderable.hpp
+GeometricTransformation.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/GeometricTransformation.hpp
+KeyframeCollection.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/KeyframeCollection.hpp
 
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/./../include/CubeRenderable.hpp
 Renderable.hpp
@@ -1591,6 +1595,10 @@ glm/glm.hpp
 -
 HierarchicalRenderable.hpp
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/HierarchicalRenderable.hpp
+GeometricTransformation.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
+KeyframeCollection.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/KeyframeCollection.hpp
 
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/FPSCounter.hpp
 chrono
@@ -1618,6 +1626,14 @@ vector
 memory
 -
 glm/glm.hpp
+-
+
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/KeyframeCollection.hpp
+GeometricTransformation.hpp
+/home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/GeometricTransformation.hpp
+map
+-
+array
 -
 
 /home-reseau/mrisy/INFO_4/InfoGraphique/poulpicoptere/practical/sfmlGraphicsPipeline/src/dynamics/./../../include/Plane.hpp
