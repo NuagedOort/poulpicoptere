@@ -10,8 +10,8 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( const float ti
     std::map< float, GeometricTransformation >::const_iterator & begin,
     std::map< float, GeometricTransformation >::const_reverse_iterator & end ) const {
 
-    float factor = (time_current - time_start) / time_end;
-    std::cout <<"****TIME FACTOR****\nTIME : "<<time_current<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\nFACTOR : "<<factor<<"\n\n";
+    float factor = (time_current - time_start) / (time_end-time_start);
+    // std::cout <<"****TIME FACTOR****\nTIMES : CURRENT ["<<time_current<<"], START["<<time_start<<"], END["<<time_end<<"]\n"<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\nFACTOR : "<<factor<<"\n\n";
 
     //If given keyframes are the last adjacent two, return a linear interpolation
     if(std::next(begin)->first == end->first ){
@@ -21,7 +21,7 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( const float ti
         glm::quat orientation = glm::quat(glm::slerp(begin->second.getOrientation(),end->second.getOrientation(),factor));
         glm::vec3 scale = glm::vec3(glm::lerp(begin->second.getScale(),end->second.getScale(),factor));
 
-        std::cout << "Translation : " << translation[0] << ",\t " << translation[1] << ",\t " << translation[2] << "\n"; 
+        // std::cout << "Translation : " << translation[0] << ",\t " << translation[1] << ",\t " << translation[2] << "\n"; 
 
         //Build a matrix transformation from the orientation, translation and scale components
         return GeometricTransformation( translation, orientation, scale );
@@ -42,7 +42,7 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( const float ti
         glm::quat orientation = glm::quat(glm::slerp(g_next.getOrientation(),g_rest.getOrientation(),factor));
         glm::vec3 scale = glm::vec3(glm::lerp(g_next.getScale(),g_rest.getScale(),factor));
 
-        std::cout << "Translation : " << translation[0] << ",\t " << translation[1] << ",\t " << translation[2] << "\n";
+        // std::cout << "Translation : " << translation[0] << ",\t " << translation[1] << ",\t " << translation[2] << "\n";
 
         //Build a matrix transformation from the orientation, translation and scale components
         return GeometricTransformation( translation, orientation, scale ); 
@@ -69,9 +69,9 @@ glm::mat4 BezierKeyframeCollection::interpolateTransformation( float time_curren
             itLastFrame++;
         }
         
-        std::cout << "TIME : " << time_current << "\n";
-        std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
-        std::cout << "END INIT : " << itLastFrame->first << "\n\n";
+        // std::cout << "TIME : " << time_current << "\n";
+        // std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
+        // std::cout << "END INIT : " << itLastFrame->first << "\n\n";
         
         //Case where only one keyframe has been set
         if(itFirstFrame->first == itLastFrame->first) {  return (itLastFrame->second).toMatrix();    }

@@ -193,7 +193,7 @@ void UltimateMeshRenderable::do_animate(float time) {
             setLocalTransform( m_BlocalKeyframes.interpolateTransformation( time, bezier_segmentation[i], bezier_segmentation[j] ));
         }
         if(!m_BparentKeyframes.empty()) {
-            std::cout << "Call parent keyframe | " << bezier_segmentation[i] << " :: " << bezier_segmentation[j] << "\n";
+            // std::cout << "Call parent keyframe | " << bezier_segmentation[i] << " :: " << bezier_segmentation[j] << "\n";
             setParentTransform( m_BparentKeyframes.interpolateTransformation( time, bezier_segmentation[i], bezier_segmentation[j] ));
         }
     } else {
