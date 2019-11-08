@@ -242,8 +242,8 @@ void initialize_scene( Viewer& viewer )
     viewer.addShaderProgram( flatShader );
 
     //Add a 3D frame to the viewer
-    FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
-    viewer.addRenderable(frame);
+    // FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
+    // viewer.addRenderable(frame);
 
     //Temporary variables
     glm::mat4 parentTransformation(1.0), localTransformation(1.0);
@@ -276,12 +276,12 @@ void initialize_scene( Viewer& viewer )
     /********************************** Scene ***********************************/
     buildWarehouse(viewer, texShader);
 
-    // UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
-        // simpleTexShader,
-        // "./../../sfmlGraphicsPipeline/meshes/skybox.obj",
-        // texWater);
-    // skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
-    // viewer.addRenderable(skybox);
+    UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
+         simpleTexShader,
+         "./../../sfmlGraphicsPipeline/meshes/skybox.obj",
+         texWater);
+    skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
+    viewer.addRenderable(skybox);
 
     DirectionalLightPtr directional = std::make_shared<DirectionalLight>(glm::vec3(-3, -1, 2),
             glm::vec3(0.0, 0.0, 0.0),
@@ -296,7 +296,7 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        texMetal, ANITIME);
+        texMetal);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
@@ -444,7 +444,7 @@ void initialize_scene( Viewer& viewer )
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 32.5 + offset);
     segments.push_back(ANITIME);
 
-    //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
+    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
     // float half = 20.0f + offset;
     PoulpicoptereCorps->setBezierSegment(segments);
 
@@ -469,15 +469,24 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-40,10,0};
     viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 8.0);
 
-    translation = glm::vec3{-80,10,25};
+    translation = glm::vec3{-40,10,0};
     viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 19.999+offset);
     translation = glm::vec3{-80,10,25};
     viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 20+offset);
 
-    translation = glm::vec3{-40,10,0};
+    translation = glm::vec3{-80,10,0};
     viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 24.999+offset);
     translation = glm::vec3{40,8,0};
     viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 25.0+offset);
+
+    translation = glm::vec3{40,10,0};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 26.49999+offset);
+    translation = glm::vec3{-20,10,0};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 26.5+offset);
+
+    
+    translation = glm::vec3{-30,10,-25};
+    viewer.getCamera().addKeyframe(GeometricTransformation(translation, orientation, scale), 28+offset);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, ANITIME);
