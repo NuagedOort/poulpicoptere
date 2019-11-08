@@ -20,13 +20,15 @@ void bladesRotation(UltimateMeshRenderablePtr blades, float start, float end, fl
     glm::vec3 translation = glm::vec3{0,0,0};
     glm::quat orientation = glm::quat{1,0,0,0};
     glm::vec3 scale = glm::vec3{1,1,1};
+    float constRel = 0.0f;
 
     for(float i = start; i < end; i = i+0.1f){
         float rel = i - start;
         if(rel <= acc_threshold) { //Acceleration
             orientation = glm::quat(glm::vec3(0,rel*rel,0));
+            constRel = rel*rel;
          } else {   // Constant part
-            orientation = glm::quat(glm::vec3(0,(acc_threshold*acc_threshold)*rel + rel*rel,0));
+            orientation = glm::quat(glm::vec3(0,(acc_threshold*acc_threshold)*rel + constRel,0));
          }
         blades->addLocalTransformKeyframe(GeometricTransformation(translation, orientation, scale), i);
     }
@@ -440,11 +442,11 @@ void initialize_scene( Viewer& viewer )
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 32.5 + offset);
     segments.push_back(ANITIME);
 
-    //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
+    animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
     // float half = 20.0f + offset;
     PoulpicoptereCorps->setBezierSegment(segments);
 
-    bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
+    bladesRotation(PoulpicopterePales, offset, ANITIME, 3.0f); 
     
     viewer.addRenderable(PoulpicoptereCorps);
     viewer.addRenderable(PoulpicopterePales);
