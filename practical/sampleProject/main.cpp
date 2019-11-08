@@ -305,6 +305,11 @@ void initialize_scene( Viewer& viewer )
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
         texMetal);
     HierarchicalRenderable::addChild(PoulpicoptereCorps, PoulpicopterePales);
+    
+    UltimateMeshRenderablePtr tempPales = std::make_shared<UltimateMeshRenderable>(
+        texShader,
+        "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_0.obj",
+        texMetal);
 
     //Parent Transform
     glm::vec3 translation = glm::vec3{0,0,0};
@@ -320,6 +325,9 @@ void initialize_scene( Viewer& viewer )
 
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), 0);
+    tempPales->addParentTransformKeyframe(GeometricTransformation(translation, orientation, glm::vec3{1,1,1}), 0);
+    tempPales->addParentTransformKeyframe(GeometricTransformation(translation, orientation, glm::vec3{1,1,1}), 3.499f);
+    tempPales->addParentTransformKeyframe(GeometricTransformation(translation, orientation, glm::vec3{0,0,0}), 3.5f);
 
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), -0.01 + offset);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), -0.01 + offset);
@@ -450,6 +458,7 @@ void initialize_scene( Viewer& viewer )
     
     viewer.addRenderable(PoulpicoptereCorps);
     viewer.addRenderable(PoulpicopterePales);
+    viewer.addRenderable(tempPales);
 
     viewer.getCamera().setTarget(PoulpicoptereCorps);
     
