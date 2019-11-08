@@ -23,13 +23,14 @@ class UltimateMeshRenderable : public HierarchicalRenderable
         void setMaterial(const MaterialPtr& material);
         void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
         void addLocalTransformKeyframe( const GeometricTransformation& transformation, float time );
+        void setBezierSegment( const std::vector< float > & segment );
 
     private:
         void do_draw();
         void do_animate( float time );
 
-        float time_end;
         bool isBezier;
+        std::vector< float > bezier_segmentation;
 
         std::vector< glm::vec3 > m_positions;
         std::vector< glm::vec3 > m_normals;

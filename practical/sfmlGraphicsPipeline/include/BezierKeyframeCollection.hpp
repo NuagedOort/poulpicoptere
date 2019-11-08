@@ -28,8 +28,7 @@ public:
 
 
 
-  GeometricTransformation computeBezier ( float time,
-    const float endAnimation,
+  GeometricTransformation computeBezier ( const float time_current, const float time_start, const float time_end,
     std::map< float, GeometricTransformation >::const_iterator & begin,
     std::map< float, GeometricTransformation >::const_reverse_iterator & end ) const;
 
@@ -46,7 +45,7 @@ public:
   //  * \param order Polynom Order
   //  * \return The interpolated geometric transformation.
   //  */
-  glm::mat4 interpolateTransformation( float time, float endAnimation ) const;
+  glm::mat4 interpolateTransformation( float time_current, float time_start, float time_end ) const;
 
 
   /**

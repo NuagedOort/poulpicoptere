@@ -31,7 +31,8 @@ UltimateMeshRenderable::UltimateMeshRenderable(
 
     // Check if an animation time has been set to a coherent value, else, use bezier interpolation mode
     endAnimation <= -1.0 ? isBezier = false : isBezier = true;
-    time_end = endAnimation;
+    bezier_segmentation.push_back(0.0f);
+    bezier_segmentation.push_back(endAnimation);
 
     //Create buffers
     glcheck(glGenBuffers(1, &m_pBuffer)); //vertices
@@ -86,6 +87,10 @@ void UltimateMeshRenderable::addParentTransformKeyframe( const GeometricTransfor
     } else {
         m_parentKeyframes.add( transformation, time );
     }
+}
+
+void UltimateMeshRenderable::setBezierSegment( const std::vector< float > & segment ){
+    bezier_segmentation = segment;
 }
 
 void UltimateMeshRenderable::do_draw()
@@ -178,11 +183,17 @@ void UltimateMeshRenderable::do_draw()
 void UltimateMeshRenderable::do_animate(float time) {
     //Assign the interpolated transformations from the keyframes to the local/parent transformations.
     if (isBezier) {     //Technically, this test could be removed, but we do not want collisions between the two modes of interpolation
+        float time_end;
+        int i, j = 1;
+        while ( time < bezier_segmentation[j] ) {
+            j++;
+        }
+        i = j-1;
         if(!m_BlocalKeyframes.empty()) {
-            setLocalTransform( m_BlocalKeyframes.interpolateTransformation( time, time_end ) );
+            setLocalTransform( m_BlocalKeyframes.interpolateTransformation( time, bezier_segmentation[i], bezier_segmentation[j] ));
         }
         if(!m_BparentKeyframes.empty()) {
-            setParentTransform( m_BparentKeyframes.interpolateTransformation( time, time_end ) );
+            setParentTransform( m_BparentKeyframes.interpolateTransformation( time, bezier_segmentation[i], bezier_segmentation[j] ));
         }
     } else {
         if(!m_localKeyframes.empty()) {

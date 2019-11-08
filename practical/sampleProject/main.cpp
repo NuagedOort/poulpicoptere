@@ -274,7 +274,7 @@ void initialize_scene( Viewer& viewer )
     texWater = "./../../sfmlGraphicsPipeline/textures/waterbox.png";
 
     /********************************** Scene ***********************************/
-    buildWarehouse(viewer, texShader);
+    //buildWarehouse(viewer, texShader);
 
     UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
         simpleTexShader,
@@ -296,7 +296,7 @@ void initialize_scene( Viewer& viewer )
     UltimateMeshRenderablePtr PoulpicoptereCorps = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Corps.obj",
-        texMetal);
+        texMetal, ANITIME);
     UltimateMeshRenderablePtr PoulpicopterePales = std::make_shared<UltimateMeshRenderable>(
         texShader,
         "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere2-Pales.obj",
@@ -433,6 +433,8 @@ void initialize_scene( Viewer& viewer )
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 32.5 + offset);
 
     //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
+
+    PoulpicoptereCorps->setBezierSegment(std::vector<float> {0.0f,20.0f + offset,ANITIME});
 
     bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
     
