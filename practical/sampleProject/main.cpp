@@ -274,14 +274,14 @@ void initialize_scene( Viewer& viewer )
     texWater = "./../../sfmlGraphicsPipeline/textures/waterbox.png";
 
     /********************************** Scene ***********************************/
-    //buildWarehouse(viewer, texShader);
+    buildWarehouse(viewer, texShader);
 
-    UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
-        simpleTexShader,
-        "./../../sfmlGraphicsPipeline/meshes/skybox.obj",
-        texWater);
-    skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
-    viewer.addRenderable(skybox);
+    // UltimateMeshRenderablePtr skybox = std::make_shared<UltimateMeshRenderable>(
+        // simpleTexShader,
+        // "./../../sfmlGraphicsPipeline/meshes/skybox.obj",
+        // texWater);
+    // skybox->setLocalTransform(glm::scale(glm::mat4(1.0), glm::vec3(90,90,90)));
+    // viewer.addRenderable(skybox);
 
     DirectionalLightPtr directional = std::make_shared<DirectionalLight>(glm::vec3(-3, -1, 2),
             glm::vec3(0.0, 0.0, 0.0),
@@ -313,6 +313,7 @@ void initialize_scene( Viewer& viewer )
     glm::vec3 localScale = glm::vec3{1,1,1};
     
     float offset = 6.5f;
+    std::vector<float> segments{0.0f};
 
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), 0);
@@ -325,6 +326,7 @@ void initialize_scene( Viewer& viewer )
     localTranslation = glm::vec3{0,0,0};
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 0.0 + offset);
     PoulpicopterePales->addLocalTransformKeyframe(GeometricTransformation(localTranslation, localOrientation, localScale), 0.0 + offset);
+    segments.push_back(0.0+offset);
 
     /* Blades rotation acceleration is maximal. Poulpicoptere starts to lift */
     translation = glm::vec3{0,0,0};
@@ -350,6 +352,7 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-60,5,0};
     orientation = glm::quat(glm::vec3(0,0,0.2));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 20.0 + offset);
+    segments.push_back(20.0+offset);
 
     /* The Poulpicoptere leans backward to brake and starts his turn*/
     translation = glm::vec3{-70,5,-15};
@@ -366,18 +369,21 @@ void initialize_scene( Viewer& viewer )
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 22.0 + offset);
 
     translation = glm::vec3{-75,5,-20};
-    orientation = glm::quat(glm::vec3(0,PI,0));
+    orientation = glm::quat(glm::vec3(0,PI/2,0));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 22.5 + offset);
+    segments.push_back(22.5+offset);
 
     /* The poulpicoptère turns around to face a new direction*/
     translation = glm::vec3{-75,5,-20};
     orientation = glm::quat(glm::vec3(0,PI,-0.2));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 23.0 + offset);
+    segments.push_back(23.0+offset);
 
     /* Nyoooom to the hangar middle*/
     translation = glm::vec3{5,5,-20};
     orientation = glm::quat(glm::vec3(0,PI,-0.2));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 26.0 + offset);
+    segments.push_back(26.0+offset);
 
     /* First half of the drift turn */
     translation = glm::vec3{10,5,-10};
@@ -388,6 +394,7 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{20,5,5};
     orientation = glm::quat(glm::vec3(0.2,0,-0.2));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 27.0 + offset);
+    segments.push_back(27.0+offset);
 
     /* Recenter and move forward a bit */
     translation = glm::vec3{10,5,0};
@@ -397,6 +404,7 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-10,5,0};
     orientation = glm::quat(glm::vec3(0.2,0,0.2));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 28.0 + offset);
+    segments.push_back(28.0+offset);
 
     /* First half of the drift turn */
     translation = glm::vec3{-15,5,10};
@@ -407,6 +415,7 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-25,5,25};
     orientation = glm::quat(glm::vec3(0,PI,-0.2));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 29.0 + offset);
+    segments.push_back(29.0+offset);
 
     /* Move to the door */
     translation = glm::vec3{-5,2,25};
@@ -416,6 +425,7 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-3,1,25};
     orientation = glm::quat(glm::vec3(0,PI,0));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 30.0 + offset);
+    segments.push_back(30.0+offset);
 
     /* Turn to face the door */
     translation = glm::vec3{-3,1,25};
@@ -426,15 +436,17 @@ void initialize_scene( Viewer& viewer )
     translation = glm::vec3{-3,1,25};
     orientation = glm::quat(glm::vec3(0,PI/2,0));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 32.0 + offset);
+    segments.push_back(32.0+offset);
 
     /* Nyyoooom */
     translation = glm::vec3{-3,1,100};
     orientation = glm::quat(glm::vec3(0,PI/2,0));
     PoulpicoptereCorps->addParentTransformKeyframe(GeometricTransformation(translation, orientation, scale), 32.5 + offset);
+    segments.push_back(ANITIME);
 
     //animationObj(viewer, texShader, "./../../sfmlGraphicsPipeline/meshes/Poulpicoptere_Animation/Poulpicoptere2_Animation_", 72, 2, texMetal, 3.5f);
-
-    PoulpicoptereCorps->setBezierSegment(std::vector<float> {0.0f,20.0f + offset,ANITIME});
+    // float half = 20.0f + offset;
+    PoulpicoptereCorps->setBezierSegment(segments);
 
     bladesRotation(PoulpicopterePales, offset, ANITIME, 0.7f); 
     

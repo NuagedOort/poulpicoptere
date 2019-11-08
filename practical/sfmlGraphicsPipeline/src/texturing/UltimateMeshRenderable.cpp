@@ -7,6 +7,7 @@
 
 #include <glm/gtc/type_ptr.hpp>
 #include <GL/glew.h>
+# include <iostream>
 
 UltimateMeshRenderable::~UltimateMeshRenderable()
 {
@@ -183,9 +184,8 @@ void UltimateMeshRenderable::do_draw()
 void UltimateMeshRenderable::do_animate(float time) {
     //Assign the interpolated transformations from the keyframes to the local/parent transformations.
     if (isBezier) {     //Technically, this test could be removed, but we do not want collisions between the two modes of interpolation
-        float time_end;
         int i, j = 1;
-        while ( time < bezier_segmentation[j] ) {
+        while ( time > bezier_segmentation[j] ) {
             j++;
         }
         i = j-1;
@@ -193,6 +193,7 @@ void UltimateMeshRenderable::do_animate(float time) {
             setLocalTransform( m_BlocalKeyframes.interpolateTransformation( time, bezier_segmentation[i], bezier_segmentation[j] ));
         }
         if(!m_BparentKeyframes.empty()) {
+            std::cout << "Call parent keyframe | " << bezier_segmentation[i] << " :: " << bezier_segmentation[j] << "\n";
             setParentTransform( m_BparentKeyframes.interpolateTransformation( time, bezier_segmentation[i], bezier_segmentation[j] ));
         }
     } else {

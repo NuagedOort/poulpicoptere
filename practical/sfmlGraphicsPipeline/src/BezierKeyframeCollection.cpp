@@ -11,7 +11,7 @@ GeometricTransformation BezierKeyframeCollection::computeBezier ( const float ti
     std::map< float, GeometricTransformation >::const_reverse_iterator & end ) const {
 
     float factor = (time_current - time_start) / time_end;
-    std::cout <<"****TIME FACTOR****\nTIME : "<<time<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\nFACTOR : "<<factor<<"\n\n";
+    std::cout <<"****TIME FACTOR****\nTIME : "<<time_current<<"\nBEGIN : "<<begin->first<<"\nEND : "<<end->first<<"\nFACTOR : "<<factor<<"\n\n";
 
     //If given keyframes are the last adjacent two, return a linear interpolation
     if(std::next(begin)->first == end->first ){
@@ -56,19 +56,22 @@ glm::mat4 BezierKeyframeCollection::interpolateTransformation( float time_curren
         std::map< float, GeometricTransformation >::const_iterator itFirstFrame = m_keyframes.begin();
         std::map< float, GeometricTransformation >::const_reverse_iterator itLastFrame = m_keyframes.rbegin();
 
-        while (itFirstFrame->first < time_start ){
-            itFirstFrame++;
-        }
-        while (itLastFrame->first > time_end ){
-            itLastFrame++;
-        }
-
         if( time_current <= itFirstFrame->first ) return itFirstFrame->second.toMatrix();
         if( time_current >= itLastFrame->first ) return itLastFrame->second.toMatrix();
+
+        std::map< float, GeometricTransformation >::const_iterator itForward = m_keyframes.begin();
+        std::map< float, GeometricTransformation >::const_reverse_iterator itBackward = m_keyframes.rbegin();
+
+        for(itForward; (itForward->first < time_start) && (itForward->first < itLastFrame->first); itForward++) {
+            itFirstFrame++;
+        }
+        for(itBackward; (itBackward->first > time_end) && (itBackward->first > itFirstFrame->first); itBackward++) {
+            itLastFrame++;
+        }
         
-        // std::cout << "TIME : " << time << "\n";
-        // std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
-        // std::cout << "END INIT : " << itLastFrame->first << "\n\n";
+        std::cout << "TIME : " << time_current << "\n";
+        std::cout << "BEGIN INIT : " << itFirstFrame->first << "\n";
+        std::cout << "END INIT : " << itLastFrame->first << "\n\n";
         
         //Case where only one keyframe has been set
         if(itFirstFrame->first == itLastFrame->first) {  return (itLastFrame->second).toMatrix();    }
